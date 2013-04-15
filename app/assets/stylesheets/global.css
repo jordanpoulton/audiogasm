@@ -1,0 +1,25 @@
+body {
+  color: white;
+  font-family: 'Abel', sans-serif;
+  background-image: linear-gradient(left top, rgb(13,13,12) 33%, rgb(112,122,121) 67%, rgb(189,180,178) 84%);
+    background-image: -o-linear-gradient(left top, rgb(13,13,12) 33%, rgb(112,122,121) 67%, rgb(189,180,178) 84%);
+    background-image: -moz-linear-gradient(left top, rgb(13,13,12) 33%, rgb(112,122,121) 67%, rgb(189,180,178) 84%);
+    background-image: -webkit-linear-gradient(left top, rgb(13,13,12) 33%, rgb(112,122,121) 67%, rgb(189,180,178) 84%);
+    background-image: -ms-linear-gradient(left top, rgb(13,13,12) 33%, rgb(112,122,121) 67%, rgb(189,180,178) 84%);
+
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      color-stop(0.33, rgb(13,13,12)),
+      color-stop(0.67, rgb(112,122,121)),
+      color-stop(0.84, rgb(189,180,178))
+    );
+}
+
+.main-header {
+  text-align: center;
+  font-family: 'Audiowide', cursive;
+  font-size: 4em;
+  margin-top: 0.5em; 
+}
