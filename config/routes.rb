@@ -1,6 +1,7 @@
 Audiogasm::Application.routes.draw do
 
   root to: 'main#home'
+  match '/playlist', to: 'main#playlist_page'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
