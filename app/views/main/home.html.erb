@@ -1,1 +1,25 @@
 <h1> Welcome to your first Audiogasm </h1>
+
+<div class='user_input'>
+
+  <%= form_tag(root_path, method: 'post') do %>
+    <div class='location_input'>
+      <%= label_tag "Where do you want to go out?: " %>
+      <%= text_field_tag 'where' %> 
+    </div>
+
+    <div class='date_input'>
+      <%= label_tag "When do you want to go out?: " %>
+      <%= text_field_tag 'when' %>
+    </div>
+
+    <div class='genre_input'>
+      <%= label_tag "What are you into?: " %>
+      <%= select_tag 'genre', options_for_select(["Rock", "Pop", "Dance", "Drum and Bass", "Breaks", "Classical", "Ambient", "Folk"], "Pop" ), :multiple => true %>
+    </div>
+
+    <div class="submit_input">
+      <%= submit_tag "Make me a playlist" %>
+    </div>
+  <% end %>
+</div>
