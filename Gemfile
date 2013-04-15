@@ -20,6 +20,11 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :development do
+  gem 'annotate', '2.5.0'
+  gem 'taps'
+end
+
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
@@ -35,4 +40,4 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'debugger'
+gem 'debugger'

@@ -1,3 +1,7 @@
-class SongKickApi < ActiveRecord::Base
-  attr_accessible :metro_area_id
+class SongKickApi
+
+  def self.area_id_for_location(location)
+
+  end
+
 end
