@@ -8,6 +8,10 @@ gem 'rails', '3.2.12'
 gem 'pg'
 gem 'curb'
 
+gem 'guard'
+gem 'guard-minitest'
+gem 'rb-fsevent', '~> 0.9'
+
 
 # Gems used only for assets and not required
 # in production environments by default.

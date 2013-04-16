@@ -1,5 +1,6 @@
 class MainController < ApplicationController
 
+
   def home
   end
 
@@ -10,4 +11,3 @@ class MainController < ApplicationController
     @what = params[:genre]
   end
 end
- 
