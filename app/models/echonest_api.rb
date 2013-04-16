@@ -1,13 +1,23 @@
 require 'echonest-ruby-api'
+require 'curb'
+require 'json'
 
 
 
 class EchonestApi
+
+  API_KEY = "SYT5EOFXZFDBJFV2P"
   # attr_accessible :title, :body
 
-  artist = Echonest::Artist.new('Weezer', 'SYT5EOFXZFDBJFV2P')
+  # artist = Echonest::Artist.new('Weezer', 'SYT5EOFXZFDBJFV2P')
 
-  artist.list_genres
+  # artist.terms
+
+  def self.get_artist_genres_by_id(artist_id)
+    http = Curl.get("http://developer.echonest.com/api/v4/artist/terms?api_key=#{API_KEY}&id=#{artist_id}&format=json")
+    json_hash = JSON.parse(http.body_str)
+    json_hash['response']['terms'].map{|e| e["name"] }
+  end
 end
 
 

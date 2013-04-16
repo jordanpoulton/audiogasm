@@ -6,6 +6,11 @@ gem 'rails', '3.2.12'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'curb'
+
+gem 'guard'
+gem 'guard-minitest'
+gem 'rb-fsevent', '~> 0.9'
 
 
 # Gems used only for assets and not required
