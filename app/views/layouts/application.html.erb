@@ -2,13 +2,23 @@
 <html>
 <head>
   <title>Audiogasm</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+  <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
 <%= yield %>
 
+
+
+
+
+
+<% if ENV['RAILS_ENV'].to_s == 'development' %>
+  <h6 class= "footer footer-fixed"><%= params.inspect %></h6>
+<%end%>
 </body>
 </html>
