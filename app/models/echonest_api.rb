@@ -18,6 +18,19 @@ class EchonestApi
     json_hash = JSON.parse(http.body_str)
     json_hash['response']['terms'].map{|e| e["name"] }
   end
+
+  def self.get_artist_genres_by_name(artist_name)
+    http = Curl.get("http://developer.echonest.com/api/v4/artist/terms?api_key=#{API_KEY}&name=#{artist_name}&format=json")
+    json_hash = JSON.parse(http.body_str)
+    json_hash['response']['terms'].map{|e| e["name"] }
+  end
+
+  def self.get_artist_genres_by_weight(artist_name, weight)
+    http = Curl.get("http://developer.echonest.com/api/v4/artist/terms?api_key=#{API_KEY}&name=#{artist_name}&format=json")
+    json_hash = JSON.parse(http.body_str)
+    json_hash['response']['terms'].select{|w| w["weight"] > weight }.map{|e| e["name"] }
+  end
+
 end
 
 

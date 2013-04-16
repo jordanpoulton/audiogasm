@@ -8,4 +8,14 @@ class EchonestApiTest < ActiveSupport::TestCase
     assert_equal(["rock", "alternative rock", "electronic", "alternative", "pop", "art rock", "90s", "electronica", "experimental", "modern rock", "post-punk", "jazz", "british pop", "experimental rock", "ambient", "british rock", "alternative pop rock", "indietronica", "grunge", "progressive rock", "80s", "indie", "soundtrack"], array)
   end
 
+  test 'can get array of artist genres from artist_name' do
+    array = EchonestApi.get_artist_genres_by_name("radiohead")
+    assert_equal(["rock", "alternative rock", "electronic", "alternative", "pop", "art rock", "90s", "electronica", "experimental", "modern rock", "post-punk", "jazz", "british pop", "experimental rock", "ambient", "british rock", "alternative pop rock", "indietronica", "grunge", "progressive rock", "80s", "indie", "soundtrack"], array)
+  end
+
+  test 'can get weighted genres for given artist' do
+    array = EchonestApi.get_artist_genres_by_weight("radiohead", 0.8)
+    assert_equal(["rock"], array)
+  end
+
 end
