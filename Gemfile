@@ -47,4 +47,4 @@ gem 'jquery-rails'
 # To use debugger
 gem 'debugger'
 
-gem 'echonest-ruby-api'
+gem 'echonest-ruby-api', :git => "git@github.com:makersacademy/echonest-ruby-api.git"
