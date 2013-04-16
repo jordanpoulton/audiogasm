@@ -40,6 +40,7 @@ GEM
       execjs
     coffee-script-source (1.6.2)
     columnize (0.3.6)
+    curb (0.8.3)
     debugger (1.5.0)
       columnize (>= 0.3.1)
       debugger-linecache (~> 1.2.0)
@@ -132,6 +133,7 @@ PLATFORMS
 DEPENDENCIES
   annotate (= 2.5.0)
   coffee-rails (~> 3.2.1)
+  curb
   debugger
   echonest-ruby-api
   jquery-rails

@@ -5,9 +5,9 @@ require 'echonest-ruby-api'
 class EchonestApi
   # attr_accessible :title, :body
 
-  artist = Echonest::Artist.new('Weezer', 'SYT5EOFXZFDBJFV2P')
-
-  artist.list_genres
+  def get_artist_name(artist_id)
+  
+  end
 end
 
 
@@ -17,3 +17,7 @@ end
 # http.body_str
 # => "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 0, \"message\": \"Success\"}, \"artist\": {\"id\": \"AR2ZPMX1187FB4E4B6\", \"name\": \"Vampire Weekend\"}}}"
 # # 1.9.3-p392 :019 >
+
+# artist = Echonest::Artist.new('SYT5EOFXZFDBJFV2P', nil,  [{:catalog => 'artists', :foreign_id => '5380281'}])
+
+  # artist = Echonest::Artist.new('SYT5EOFXZFDBJFV2P', nil,  [{:catalog => 'artists', :foreign_id => 'artist_id'}])
