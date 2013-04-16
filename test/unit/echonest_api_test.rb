@@ -21,4 +21,5 @@ class EchonestApiTest < ActiveSupport::TestCase
   test 'artist is of a given genre' do
     assert_equal true, EchonestApi.check_artist_is_of_genre('radiohead', 'rock')
   end
+
 end
