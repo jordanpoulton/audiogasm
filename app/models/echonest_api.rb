@@ -13,6 +13,7 @@ class EchonestApi
 
   # artist.terms
 
+
   def self.get_artist_genres_by_id(artist_id)
     http = Curl.get("http://developer.echonest.com/api/v4/artist/terms?api_key=#{API_KEY}&id=#{artist_id}&format=json")
     json_hash = JSON.parse(http.body_str)
@@ -31,6 +32,11 @@ class EchonestApi
     json_hash['response']['terms'].select{|w| w["weight"] > weight }.map{|e| e["name"] }
   end
 
+  def self.check_artist_is_of_genre(artist_name, genre)
+    array = get_artist_genres_by_name(artist_name)
+    array.each { |item| return true if item == genre}
+    false
+  end
 end
 
 
