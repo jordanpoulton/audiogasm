@@ -9,10 +9,9 @@ class EchonestApi
   API_KEY = "SYT5EOFXZFDBJFV2P"
   # attr_accessible :title, :body
 
-<<<<<<< HEAD
   def get_artist_name(artist_id)
-  
-=======
+  end
+
   # artist = Echonest::Artist.new('Weezer', 'SYT5EOFXZFDBJFV2P')
 
   # artist.terms
@@ -21,7 +20,6 @@ class EchonestApi
     http = Curl.get("http://developer.echonest.com/api/v4/artist/terms?api_key=#{API_KEY}&id=#{artist_id}&format=json")
     json_hash = JSON.parse(http.body_str)
     json_hash['response']['terms'].map{|e| e["name"] }
->>>>>>> 251d5d690d69b22e4330122deff2b475e204ec20
   end
 end
 
