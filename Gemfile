@@ -16,6 +16,7 @@ group :assets do
   gem 'twitter-bootstrap-rails'
   gem "less-rails", "~> 2.3.2"
   gem "therubyracer", "~> 0.11.4"
+  gem "font-awesome-rails"
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby

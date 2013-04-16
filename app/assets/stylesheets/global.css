@@ -16,19 +16,113 @@ body {
       color-stop(0.84, rgb(189,180,178))
     );
 }
+  
+.container {
+  margin-bottom: 60px;
+}
 
 .main-header {
-  text-align: center;
   font-family: 'Audiowide', cursive;
+  color:gold;
   font-size: 4em;
-  margin-top: 0.5em; 
+  margin-top: 0.4em;
 }
 
-.form {
-  margin-top: 2em;
-  margin-bottom: 2em;
-  /*text-align: center;*/
+.title {
+  text-align: center;
+  margin-bottom: 1em;
 }
-.submit-input {
-  margin-top: 2em;
+
+.intro {
+  margin-top: 3em;
+}
+
+.icons {
+  margin-top: 1.7em;
+}
+.icon-twitter {
+  margin-left: 0.8em;
+margin-right: 1.5em;
+}
+
+form {
+  color: gold;
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+.form > * {
+  
+}
+
+.label {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+ 
+}
+
+.form-space {
+   margin-bottom: 1.5em;
+}
+
+.form-space label {
+  font-weight: bold;
+ font-size: 22px;
+ margin-bottom: 10px;
+}
+
+.form-space input {
+  width: 300px;
+ 
+}
+.form-space select {
+  width: 300px;
+  margin-bottom: 25px;
+  font-family: 'Abel', sans-serif;
+  font-size: 20px;
+}
+.form-space select option > * {
+  
+}
+.inline {
+  display: inline-block;
+  position: relative;
+}
+
+.from-to{
+  color: red;
+  position: absolute;
+  left:-75px;
+  top: 5px;
+}
+
+
+
+.button input {
+  background-color: gold;
+  font-size: 18px;
+  font-family: 'Abel', sans-serif;
+  font-weight: 900;
+  background-image: linear-gradient(left bottom, rgb(173,145,45) 23%, rgb(172,179,43) 62%, rgb(210,219,44) 81%);
+background-image: -o-linear-gradient(left bottom, rgb(173,145,45) 23%, rgb(172,179,43) 62%, rgb(210,219,44) 81%);
+background-image: -moz-linear-gradient(left bottom, rgb(173,145,45) 23%, rgb(172,179,43) 62%, rgb(210,219,44) 81%);
+background-image: -webkit-linear-gradient(left bottom, rgb(173,145,45) 23%, rgb(172,179,43) 62%, rgb(210,219,44) 81%);
+background-image: -ms-linear-gradient(left bottom, rgb(173,145,45) 23%, rgb(172,179,43) 62%, rgb(210,219,44) 81%);
+
+background-image: -webkit-gradient(
+  linear,
+  left bottom,
+  right top,
+  color-stop(0.23, rgb(173,145,45)),
+  color-stop(0.62, rgb(172,179,43)),
+  color-stop(0.81, rgb(210,219,44))
+);
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 5px 5px 5px black;
 }

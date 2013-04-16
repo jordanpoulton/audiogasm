@@ -1,34 +1,47 @@
-<h1> Welcome to your first Audiogasm </h1>
+<h1 class="title"> Locate. Listen. Live. </h1>
 
 
-<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+<h3>Audiogasm connects you to the live music playing in your area that you want to see. Just pick a date range, location, and desired music genre, and Audiogasm will do the rest, creating a playlist for you to check out the artists playing nearby, and links to buy tickets to any gigs that take your fancy.  </h3>
 
-<div class="form span7 offset1"
+
 <div class='user_input'>
 
   <%= form_tag(playlist_path, method: 'post') do %>
-    <div class='location_input'>
-      <%= label_tag "Where do you want to go out?: " %>
+    <div class='form-space location_input'>
+      <%= label_tag "Where do you want to go out? " %>
       <%= text_field_tag 'where' %> 
+
     </div>
 
-    <div class='date_input'>
-      <%= label_tag "When do you want to go out? From: " %>
+    <div class='form-space date_input'>
+      <%= label_tag "When do you want to go out?" %>
+      <div>
+        <div class="inline">
+          <div class="from-to">
+       <%= label_tag "From: " %>
+          </div>
       <%= text_field_tag 'min_date' %>
-      <%= label_tag " To: " %>
+        </div>
+      </div>
+      <div>
+        <div class="inline">
+          <div class="from-to">
+      <%= label_tag "To: " %>
+          </div>
       <%= text_field_tag 'max_date' %>
+        </div>
+      </div>
     </div>
 
-    <div class='genre_input'>
+    <div class='form-space genre_input'>
       <%= label_tag "What music are you in to? " %>
       <%= select_tag 'genre', options_for_select(["Rock", "Pop", "Dance", "Drum and Bass", "Breaks", "Classical", "Ambient", "Folk"], "Pop" ), :multiple => true %>
     </div>
 
-    <div class="submit_input">
-      <!-- <div class="btn"> -->
+    <div class="button submit_input">
       <%= submit_tag "Make me a playlist" %>
       </div>
-    </div>
+    
   <% end %>
 </div>
 
