@@ -6,7 +6,6 @@ require 'json'
 
 class EchonestApi
 
-  API_KEY = "SYT5EOFXZFDBJFV2P"
   # attr_accessible :title, :body
 
   # def self.get_artist_name(artist_id)
@@ -15,8 +14,8 @@ class EchonestApi
   #   json_hash['response']['artist']['name']
   # end
 
-  def self.get_artist_genres_by_id(artist_id)
-    http = Curl.get("http://developer.echonest.com/api/v4/artist/terms?api_key=#{API_KEY}&id=#{artist_id}&format=json")
+  def self.get_artist_genres_by_id(artist_id) 
+    http = Curl.get("http://developer.echonest.com/api/v4/artist/terms?api_key=#{ECHONEST_API_KEY}&id=#{artist_id}&format=json")
     json_hash = JSON.parse(http.body_str)
     json_hash['response']['terms'].map{|e| e["name"] }
   end
@@ -28,7 +27,7 @@ class EchonestApi
   # end
 
   def self.get_artist_genres_by_weight(artist_id, weight)
-    http = Curl.get("http://developer.echonest.com/api/v4/artist/terms?api_key=#{API_KEY}&name=#{artist_id}&format=json")
+    http = Curl.get("http://developer.echonest.com/api/v4/artist/terms?api_key=#{ECHONEST_API_KEY}&name=#{artist_id}&format=json")
     json_hash = JSON.parse(http.body_str)
     json_hash['response']['terms'].select{|w| w["weight"] > weight }.map{|e| e["name"] }
   end
