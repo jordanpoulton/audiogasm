@@ -23,25 +23,31 @@ class EchonestApi
   def self.get_artist_genres_by_id(artist_id)
     http = Curl.get("http://developer.echonest.com/api/v4/artist/terms?api_key=#{API_KEY}&id=songkick:artist:#{artist_id}&format=json")
     json_hash = JSON.parse(http.body_str)
-    json_hash['response']['terms'].map{|e| e["name"] }
+    if json_hash["response"]["status"]["message"] == "Success"
+      json_hash['response']['terms'].map{|e| e["name"] }
+    else
+      return
+    end
   end
 
-  def self.get_artist_genres_by_name(artist_name)
-    http = Curl.get("http://developer.echonest.com/api/v4/artist/terms?api_key=#{API_KEY}&name=#{artist_name}&format=json")
-    json_hash = JSON.parse(http.body_str)
-    json_hash['response']['terms'].map{|e| e["name"] }
-  end
+  # def self.get_artist_genres_by_name(artist_name)
+  #   http = Curl.get("http://developer.echonest.com/api/v4/artist/terms?api_key=#{API_KEY}&name=#{artist_name}&format=json")
+  #   json_hash = JSON.parse(http.body_str)
+  #   json_hash['response']['terms'].map{|e| e["name"] }
+  # end
 
-  def self.get_artist_genres_by_weight(artist_name, weight)
-    http = Curl.get("http://developer.echonest.com/api/v4/artist/terms?api_key=#{API_KEY}&name=#{artist_name}&format=json")
+  def self.get_artist_genres_by_weight(artist_id, weight)
+    http = Curl.get("http://developer.echonest.com/api/v4/artist/terms?api_key=#{API_KEY}&name=#{artist_id}&format=json")
     json_hash = JSON.parse(http.body_str)
     json_hash['response']['terms'].select{|w| w["weight"] > weight }.map{|e| e["name"] }
   end
 
-  def self.check_artist_is_of_genre(artist_name, genre)
-    array = get_artist_genres_by_name(artist_name)
-    array.each { |item| return true if item == genre}
-    false
+  def self.check_artist_is_of_genre(artist_id, genre)
+    array = get_artist_genres_by_id(artist_id)
+    unless array.nil?
+      array.each { |item| item == genre ? true : return }
+    else return
+    end
   end
 end
 
