@@ -30,7 +30,16 @@ body {
 
 .title {
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
+}
+
+a {
+  color: white
+}
+
+a:hover {
+  text-decoration: none;
+  color: gold;
 }
 
 .intro {
@@ -42,7 +51,11 @@ body {
 }
 .icon-twitter {
   margin-left: 0.8em;
-margin-right: 1.5em;
+margin-right: 0.6em;
+}
+
+#description-text {
+  margin-bottom: 60px;
 }
 
 form {
@@ -92,7 +105,7 @@ form {
 }
 
 .from-to{
-  color: red;
+  color: white;
   position: absolute;
   left:-75px;
   top: 5px;
@@ -102,10 +115,10 @@ form {
 
 .button input {
   background-color: gold;
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Abel', sans-serif;
-  font-weight: 900;
-  background-image: linear-gradient(left bottom, rgb(173,145,45) 23%, rgb(172,179,43) 62%, rgb(210,219,44) 81%);
+  font-weight: bolder;
+  /*background-image: linear-gradient(left bottom, rgb(173,145,45) 23%, rgb(172,179,43) 62%, rgb(210,219,44) 81%);
 background-image: -o-linear-gradient(left bottom, rgb(173,145,45) 23%, rgb(172,179,43) 62%, rgb(210,219,44) 81%);
 background-image: -moz-linear-gradient(left bottom, rgb(173,145,45) 23%, rgb(172,179,43) 62%, rgb(210,219,44) 81%);
 background-image: -webkit-linear-gradient(left bottom, rgb(173,145,45) 23%, rgb(172,179,43) 62%, rgb(210,219,44) 81%);
@@ -118,11 +131,21 @@ background-image: -webkit-gradient(
   color-stop(0.23, rgb(173,145,45)),
   color-stop(0.62, rgb(172,179,43)),
   color-stop(0.81, rgb(210,219,44))
-);
+);*/
   border-radius: 10px;
   border: none;
   padding: 5px;
   padding-left: 20px;
   padding-right: 20px;
   box-shadow: 5px 5px 5px black;
+}
+
+.album {
+  margin-top: 20px;
+  height: 500px;
+  background-color: pink;
+}
+
+.tickets {
+  text-align: center;
 }
