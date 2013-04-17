@@ -14,7 +14,7 @@ class EchonestApi
   #   json_hash['response']['artist']['id']
   # end
 
-  def self.get_rdio_artist_id(songkick_artist_id)
+  def self.   (songkick_artist_id)
     http = Curl.get("http://developer.echonest.com/api/v4/artist/profile?api_key=#{ECHONEST_API_KEY}&id=songkick:artist:#{songkick_artist_id}&bucket=id:rdio-US&format=json")
     json_hash = JSON.parse(http.body_str)
     artist_id = json_hash['response']['artist']['foreign_ids'].map{|e| e["foreign_id"] }.first
