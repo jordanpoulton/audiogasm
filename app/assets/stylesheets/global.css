@@ -22,6 +22,7 @@ body {
 }
 
 .main-header {
+  text-align: right;
   font-family: 'Audiowide', cursive;
   color:gold;
   font-size: 4em;
@@ -48,6 +49,7 @@ a:hover {
 
 .icons {
   margin-top: 1.7em;
+  text-align: right;
 }
 .icon-twitter {
   margin-left: 0.8em;
@@ -65,9 +67,6 @@ form {
   margin-bottom: 2em;
 }
 
-.form > * {
-  
-}
 
 .label {
   width: 100%;
@@ -118,20 +117,19 @@ form {
   font-size: 20px;
   font-family: 'Abel', sans-serif;
   font-weight: bolder;
-  /*background-image: linear-gradient(left bottom, rgb(173,145,45) 23%, rgb(172,179,43) 62%, rgb(210,219,44) 81%);
-background-image: -o-linear-gradient(left bottom, rgb(173,145,45) 23%, rgb(172,179,43) 62%, rgb(210,219,44) 81%);
-background-image: -moz-linear-gradient(left bottom, rgb(173,145,45) 23%, rgb(172,179,43) 62%, rgb(210,219,44) 81%);
-background-image: -webkit-linear-gradient(left bottom, rgb(173,145,45) 23%, rgb(172,179,43) 62%, rgb(210,219,44) 81%);
-background-image: -ms-linear-gradient(left bottom, rgb(173,145,45) 23%, rgb(172,179,43) 62%, rgb(210,219,44) 81%);
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 5px 5px 5px black;
+}
 
-background-image: -webkit-gradient(
-  linear,
-  left bottom,
-  right top,
-  color-stop(0.23, rgb(173,145,45)),
-  color-stop(0.62, rgb(172,179,43)),
-  color-stop(0.81, rgb(210,219,44))
-);*/
+.ticket-btn {
+  background-color: gold;
+  font-size: 20px;
+  font-family: 'Abel', sans-serif;
+  font-weight: bolder;
   border-radius: 10px;
   border: none;
   padding: 5px;
@@ -142,7 +140,7 @@ background-image: -webkit-gradient(
 
 .album {
   margin-top: 20px;
-  height: 500px;
+  margin-bottom: 20px;
   background-color: pink;
 }
 
