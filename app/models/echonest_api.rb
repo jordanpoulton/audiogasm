@@ -10,14 +10,18 @@ class EchonestApi
   # attr_accessible :title, :body
 
   def self.get_artist_name(artist_id)
-    http = Curl.get("http://developer.echonest.com/api/v4/artist/profile?api_key=#{API_KEY}&id=#{artist_id}&format=json")
+    http = Curl.get("http://developer.echonest.com/api/v4/artist/profile?api_key=#{API_KEY}&id=songkick:artist:#{artist_id}&format=json")
     json_hash = JSON.parse(http.body_str)
-    json_hash['response']['artist']['name']
+    if json_hash["response"]["status"]["message"] == "Success"
+      json_hash['response']['artist']['name']
+    else
+      return
+    end
   end
 
 
   def self.get_artist_genres_by_id(artist_id)
-    http = Curl.get("http://developer.echonest.com/api/v4/artist/terms?api_key=#{API_KEY}&id=#{artist_id}&format=json")
+    http = Curl.get("http://developer.echonest.com/api/v4/artist/terms?api_key=#{API_KEY}&id=songkick:artist:#{artist_id}&format=json")
     json_hash = JSON.parse(http.body_str)
     json_hash['response']['terms'].map{|e| e["name"] }
   end
