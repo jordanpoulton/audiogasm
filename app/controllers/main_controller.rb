@@ -13,9 +13,9 @@ class MainController < ApplicationController
 
   def self.get_artist_id_from_form(where, min_date, max_date, what)
     artist_array = SongKickApi.get_upcoming_artists_by_date_and_location(where, min_date, max_date)
-    what.map do |genre|
-      artist_array.map do |artist|
-        EchonestApi.check_artist_is_of_genre(artist, genre)
+    artist_array.map do |artist|
+      what.map do |genre|
+      EchonestApi.check_artist_is_of_genre(artist, genre)
       end
     end
   end

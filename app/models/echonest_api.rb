@@ -15,7 +15,7 @@ class EchonestApi
     if json_hash["response"]["status"]["message"] == "Success"
       json_hash['response']['artist']['name']
     else
-      return
+      return "Couldn't get artist name"
     end
   end
 
@@ -26,7 +26,7 @@ class EchonestApi
     if json_hash["response"]["status"]["message"] == "Success"
       json_hash['response']['terms'].map{|e| e["name"] }
     else
-      return
+      print ["Couldn't get artist Genres"]
     end
   end
 
@@ -45,8 +45,8 @@ class EchonestApi
   def self.check_artist_is_of_genre(artist_id, genre)
     array = get_artist_genres_by_id(artist_id)
     unless array.nil?
-      array.each { |item| item == genre ? true : return }
-    else return
+      array.map { |item| item == genre ? artist_id : "Artist doesn't match genre" }
+    else return "Array is empty"
     end
   end
 end
