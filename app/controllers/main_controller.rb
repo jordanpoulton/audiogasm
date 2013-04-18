@@ -11,12 +11,13 @@ class MainController < ApplicationController
     @what = params[:genre]
   end
 
-  def self.get_artist_id_from_form(where, min_date, max_date, what)
+  def self.get_track(where, min_date, max_date, what)
     artist_array = SongKickApi.get_upcoming_artists_by_date_and_location(where, min_date, max_date)
-    artist_array.map do |artist|
-      what.map do |genre|
+    artist_id = artist_array.detect do |artist|
+      what.detect do |genre|
       EchonestApi.check_artist_is_of_genre(artist, genre)
       end
     end
+    EchonestApi.get_song_from_rdio(artist_id)
   end
 end
