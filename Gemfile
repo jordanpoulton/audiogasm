@@ -9,7 +9,7 @@ gem 'pg'
 gem 'curb'
 
 gem 'guard'
-gem 'guard-minitest'
+gem 'guard-test'
 gem 'rb-fsevent', '~> 0.9'
 
 
