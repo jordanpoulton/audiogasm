@@ -13,10 +13,5 @@
 
 ActiveRecord::Schema.define(:version => 20130415135151) do
 
-  create_table "song_kick_apis", :force => true do |t|
-    t.integer  "metro_area_id"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
-  end
 
 end
