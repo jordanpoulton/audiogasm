@@ -1,30 +1,41 @@
-require 'test_helper'
-require 'timecop'
+# require 'timecop'
+require "test_helper"
 
 class ArtistGigInfoFinderTest < ActiveSupport::TestCase
 
   def setup
-    @artists_gig_info = ArtistGigInfoFinder.new("london", Date.today, Date.today)
+    # Timecop
+    @gigs = ArtistGigInfoFinder.new("london", Date.today, Date.today)
   end
 
   test 'has location when initialized' do
-    @artists_gig_info
-    assert_equal "london", @artists_gig_info.location
+    @gigs
+    assert_equal "london", @gigs.location
   end
 
   test 'has min_date when initialized' do
-    @artists_gig_info
-    assert_equal Date.today, @artists_gig_info.min_date
+    @gigs
+    assert_equal Date.today, @gigs.min_date
   end
 
   test 'has max_date when initialized' do
-    @artists_gig_info
-    assert_equal Date.today, @artists_gig_info.max_date
+    @gigs
+    assert_equal Date.today, @gigs.max_date
   end
+
+  # describe 'xxx' do
+
+  #   before do
+  #     Timecop.freeze(Date.local(2000, 1, 1))
+  #   end
+
+  #   after do
+  #     Timecop.return
+  #   end
 
   test 'returns no results when no gigs are found in date range and location' do
     ArtistGigInfoFinder.new("Honolulu", "2897-04-02", "2897-04-03")
-    assert_equal 0, artists_gig_info.get_artist_gig_info.count
-  end
 
+    @gigs.get_gigs_info.count
+  end
 end

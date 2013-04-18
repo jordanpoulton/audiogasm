@@ -12,7 +12,6 @@ gem 'guard'
 gem 'guard-test'
 gem 'rb-fsevent', '~> 0.9'
 
-gem 'timecop'
 
 
 # Gems used only for assets and not required
@@ -30,6 +29,10 @@ end
 group :development do
   gem 'annotate', '2.5.0'
   gem 'taps'
+end
+
+group :test do
+  gem 'timecop', '0.5.5'
 end
 
 gem 'jquery-rails'
