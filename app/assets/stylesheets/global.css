@@ -21,6 +21,9 @@ body {
   margin-bottom: 60px;
 }
 
+.equaliser {
+  text-align: center;
+}
 .main-header {
   text-align: right;
   font-family: 'Audiowide', cursive;
@@ -31,7 +34,7 @@ body {
 
 .title {
   text-align: center;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 
 a {
@@ -138,12 +141,102 @@ form {
   box-shadow: 5px 5px 5px black;
 }
 
-.album {
-  margin-top: 20px;
+.listing {
   margin-bottom: 20px;
-  background-color: pink;
+  font-size: 24px;
+}
+
+.gold {
+  color: gold;
 }
 
 .tickets {
   text-align: center;
+  margin-left: 0;
+  margin-top: 160px;
+}
+
+.info {
+  width: 200px;
+}
+.album {
+  text-align: center;
+  height: 400px;
+}
+
+.player {
+  display: none;
+  position: absolute;
+  text-align: center;
+  opacity: 0.8;
+  left:-30px;
+  top: 341px;  
+  background-color: grey;
+  background-image: linear-gradient(left top, rgb(180,182,184) 25%, rgb(94,104,112) 63%, rgb(110,120,125) 82%);
+background-image: -o-linear-gradient(left top, rgb(180,182,184) 25%, rgb(94,104,112) 63%, rgb(110,120,125) 82%);
+background-image: -moz-linear-gradient(left top, rgb(180,182,184) 25%, rgb(94,104,112) 63%, rgb(110,120,125) 82%);
+background-image: -webkit-linear-gradient(left top, rgb(180,182,184) 25%, rgb(94,104,112) 63%, rgb(110,120,125) 82%);
+background-image: -ms-linear-gradient(left top, rgb(180,182,184) 25%, rgb(94,104,112) 63%, rgb(110,120,125) 82%);
+
+background-image: -webkit-gradient(
+  linear,
+  left top,
+  right bottom,
+  color-stop(0.25, rgb(180,182,184)),
+  color-stop(0.63, rgb(94,104,112)),
+  color-stop(0.82, rgb(110,120,125))
+);
+  padding-top: 8px;
+  padding-bottom: 8px;
+ 
+}
+
+.icon {
+  margin-left: 40px;
+}
+
+.artist {
+  margin-bottom: 30px;
+}
+
+.album {
+  background-image: url("http://img.cdandlp.com/2012/09/imgL/115569818.jpg");
+  background-size: 100%;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  height: 400px;
+}
+
+.song-album {
+  background-color: grey;
+  opacity: 0.75;
+  text-align: left;
+  /*padding-top: 5px;*/
+  position: absolute;
+  left: -30px;
+  top: 0px;
+}
+
+#pic {
+  height: 400px;
+}
+
+.skip {
+  text-align: center;
+  padding-left: 20px;
+  margin-left: 0;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background: grey;
+/*  opacity: 0.6;*/
+}
+
+.icon-headphones {
+  color: gold;
+}
+
+.playing-text {
+  display: none;
+  margin-left: 20px;
 }
