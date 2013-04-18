@@ -8,6 +8,7 @@ class EchonestApi
 
   # attr_accessible :title, :body
 
+
   # def self.get_echonest_artist_id(songkick_artist_id)
   #   http = Curl.get("http://developer.echonest.com/api/v4/artist/profile?api_key=#{ECHONEST_API_KEY}&id=songkick:artist:#{songkick_artist_id}&format=json")
   #   json_hash = JSON.parse(http.body_str)
@@ -21,20 +22,28 @@ class EchonestApi
     /\w+\z/.match(artist_id)
   end
 
-  def self.get_artist_genres_by_id(artist_id) 
-    http = Curl.get("http://developer.echonest.com/api/v4/artist/terms?api_key=#{ECHONEST_API_KEY}&id=#{artist_id}&format=json")
+  def self.get_artist_name(artist_id)
+    http = Curl.get("http://developer.echonest.com/api/v4/artist/profile?api_key=#{API_KEY}&id=songkick:artist:#{artist_id}&format=json")
     json_hash = JSON.parse(http.body_str)
-    json_hash['response']['terms'].map{|e| e["name"] }
+    if json_hash["response"]["status"]["message"] == "Success"
+      json_hash['response']['artist']['name']
+    else
+      return "Couldn't get artist name"
+    end
   end
 
-  # def self.get_artist_genres_by_name(artist_name)
-  #   http = Curl.get("http://developer.echonest.com/api/v4/artist/terms?api_key=#{ECHONEST_API_KEY}&name=#{artist_name}&format=json")
-  #   json_hash = JSON.parse(http.body_str)
-  #   json_hash['response']['terms'].map{|e| e["name"] }
-  # end
+  def self.get_artist_genres_by_id(artist_id)
+    http = Curl.get("http://developer.echonest.com/api/v4/artist/terms?api_key=#{API_KEY}&id=songkick:artist:#{artist_id}&format=json")
+    json_hash = JSON.parse(http.body_str)
+    if json_hash["response"]["status"]["message"] == "Success"
+      json_hash['response']['terms'].map{|e| e["name"] }
+    else
+      print ["Couldn't get artist Genres"]
+    end
+  end
 
   def self.get_artist_genres_by_weight(artist_id, weight)
-    http = Curl.get("http://developer.echonest.com/api/v4/artist/terms?api_key=#{ECHONEST_API_KEY}&name=#{artist_id}&format=json")
+    http = Curl.get("http://developer.echonest.com/api/v4/artist/terms?api_key=#{API_KEY}&name=#{artist_id}&format=json")
     json_hash = JSON.parse(http.body_str)
     json_hash['response']['terms'].select{|w| w["weight"] > weight }.map{|e| e["name"] }
   end
@@ -43,6 +52,10 @@ class EchonestApi
     array = get_artist_genres_by_id(artist_id)
     array.each { |item| return true if item == genre}
     false
+    unless array.nil?
+      array.map { |item| item == genre ? artist_id : "Artist doesn't match genre" }
+    else return "Array is empty"
+    end
   end
 end
 
