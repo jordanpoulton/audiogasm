@@ -1,0 +1,128 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: ! 'http://developer.echonest.com/api/v4/artist/profile?api_key=SYT5EOFXZFDBJFV2P&bucket=id:rdio-US&format=json&id=songkick:artist:'
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 400
+      message: !binary |-
+        QmFkIFJlcXVlc3Q=
+    headers:
+      !binary "RGF0ZQ==":
+      - !binary |-
+        RnJpLCAxOSBBcHIgMjAxMyAxNjo0ODoyOCBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        MTM0
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        RmxLZVlWTmxSK082SXgwc2lxS3djUQ==
+      !binary "WC1SYXRlbGltaXQtUmVtYWluaW5n":
+      - !binary |-
+        MTk=
+      !binary "U2VydmVy":
+      - !binary |-
+        VG9ybmFkb1NlcnZlci8yLjQuMQ==
+      !binary "WC1SYXRlbGltaXQtTGltaXQ=":
+      - !binary |-
+        MjA=
+      !binary "WC1SYXRlbGltaXQtVXNlZA==":
+      - !binary |-
+        MQ==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        S2VlcC1hbGl2ZQ==
+      !binary "S2VlcC1BbGl2ZQ==":
+      - !binary |-
+        dGltZW91dD0xNSwgbWF4PTEwMA==
+      !binary "Vmlh":
+      - !binary |-
+        MS4xIElELTAwMDA2Mjc1MDEyMjM2NjYgdXByb3h5LTI=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyZXNwb25zZSI6IHsic3RhdHVzIjogeyJ2ZXJzaW9uIjogIjQuMiIsICJj
+        b2RlIjogNSwgIm1lc3NhZ2UiOiAiaWQgLSBJbnZhbGlkIHBhcmFtZXRlcjog
+        aWQgbXVzdCBiZSBhbiBFY2hvIE5lc3QgaWQgb3IgZm9yZWlnbiBpZCJ9fX0=
+    http_version: 
+  recorded_at: Fri, 19 Apr 2013 16:48:31 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/profile?api_key=SYT5EOFXZFDBJFV2P&bucket=id:rdio-US&format=json&id=songkick:artist:253846
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "RGF0ZQ==":
+      - !binary |-
+        RnJpLCAxOSBBcHIgMjAxMyAxNjo1Nzo1OCBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        MjE4
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        QmhSalBWMTJRZmlsVGRmOTZHVi9hdw==
+      !binary "RXRhZw==":
+      - !binary |-
+        ImFhZjhkNDJhMjQ1YjcyZDhjODhkY2U4ZjQ5N2EzODA0OGNmY2ZkOTEi
+      !binary "WC1Xb3JrZXItTm9kZQ==":
+      - !binary |-
+        ZDFjN2Q6MjgxNzc=
+      !binary "WC1SYXRlbGltaXQtUmVtYWluaW5n":
+      - !binary |-
+        MTU=
+      !binary "U2VydmVy":
+      - !binary |-
+        VG9ybmFkb1NlcnZlci8yLjQuMQ==
+      !binary "WC1SYXRlbGltaXQtTGltaXQ=":
+      - !binary |-
+        MjA=
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bWF4LWFnZT04NjQwMA==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
+      - !binary |-
+        Kg==
+      !binary "WC1SYXRlbGltaXQtVXNlZA==":
+      - !binary |-
+        NQ==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        S2VlcC1hbGl2ZQ==
+      !binary "S2VlcC1BbGl2ZQ==":
+      - !binary |-
+        dGltZW91dD0xNSwgbWF4PTEwMA==
+      !binary "Vmlh":
+      - !binary |-
+        MS4xIElELTAwMDA2Mjc1MDEyMjM2NjYgdXByb3h5LTM=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyZXNwb25zZSI6IHsic3RhdHVzIjogeyJ2ZXJzaW9uIjogIjQuMiIsICJj
+        b2RlIjogMCwgIm1lc3NhZ2UiOiAiU3VjY2VzcyJ9LCAiYXJ0aXN0IjogeyJm
+        b3JlaWduX2lkcyI6IFt7ImNhdGFsb2ciOiAicmRpby1VUyIsICJmb3JlaWdu
+        X2lkIjogInJkaW8tVVM6YXJ0aXN0OnI5MTMxOCJ9XSwgImlkIjogIkFSSDZX
+        NFgxMTg3Qjk5Mjc0RiIsICJuYW1lIjogIlJhZGlvaGVhZCJ9fX0=
+    http_version: 
+  recorded_at: Fri, 19 Apr 2013 16:58:02 GMT
+recorded_with: VCR 2.4.0
