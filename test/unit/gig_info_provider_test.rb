@@ -3,7 +3,7 @@ require 'test_helper'
 class GigInfoProviderTest < ActiveSupport::TestCase
 
   def setup
-    @gig_filter = GigInfoProvider.new("london", Date.today, Date.today)
+    @gig_filter = GigInfoProvider.new('london', Date.today, Date.today)
   end
 
   test 'has a location when initialized' do
@@ -22,11 +22,15 @@ class GigInfoProviderTest < ActiveSupport::TestCase
   end
 
   test 'can get metro_area_id for london' do
-    assert_equal 24426, @gig_filter.get_area_id_for("London", "UK")
+    assert_equal 24426, @gig_filter.get_location_id_for("London")
   end
 
   test 'can get an area id for a location' do
-    assert_equal @gig_filter.get_area_id_for('london'), 24426
+    assert_equal @gig_filter.get_location_id_for('london'), 24426
+  end
+
+  test 'returns readable error message if location not found' do
+    assert_raise (RuntimeError) { @gig_filter.get_location_id_for('jalililili') }
   end
 
   # test 'can get the id of an artist that is playing in specific metro_area_id and date' do
