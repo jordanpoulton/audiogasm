@@ -1,9 +1,9 @@
 require 'test_helper'
 
-class ArtistGigInfoFinderTest < ActiveSupport::TestCase
+class GigInfoFinderTest < ActiveSupport::TestCase
 
   def setup
-    @gig_filter = ArtistGigInfoFinder.new("london", Date.today, Date.today)
+    @gig_filter = GigInfoFinder.new("london", Date.today, Date.today)
   end
 
   test 'has a location when initialized' do
@@ -22,6 +22,6 @@ class ArtistGigInfoFinderTest < ActiveSupport::TestCase
   end
 
   test 'it returns gig\'s info for specified filters' do
-    assert ArtistGigInfoFinder.get_gig_info('london', Date.today, Date.today)
+    assert GigInfoFinder.get_gig_info('london', Date.today, Date.today)
   end
 end

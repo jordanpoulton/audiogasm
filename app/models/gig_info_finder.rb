@@ -1,6 +1,6 @@
-class ArtistGigInfoFinder
+class GigInfoFinder
 
-attr_reader :location, :from, :to
+attr_accessor :location, :from, :to
 
   def initialize(location, from, to)
     @location = location
