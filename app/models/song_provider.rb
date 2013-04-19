@@ -16,7 +16,6 @@ class SongProvider
     end
     @rdio_artist_id = json_hash['response']['artist']['foreign_ids'].map{|e| e["foreign_id"] }.first
     /\w+\z/.match(@rdio_artist_id).to_s
-
   end
 
   def get_song_from_rdio(rdio_artist_id, count =1)
