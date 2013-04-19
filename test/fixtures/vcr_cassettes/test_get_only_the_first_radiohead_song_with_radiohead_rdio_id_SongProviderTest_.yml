@@ -1,0 +1,140 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/profile?api_key=SYT5EOFXZFDBJFV2P&bucket=id:rdio-US&format=json&id=songkick:artist:253846
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "RGF0ZQ==":
+      - !binary |-
+        RnJpLCAxOSBBcHIgMjAxMyAxNzoxNTozOCBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        MjE4
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        eXQwVFkwQlpUQU9Xa3ZNc0NJNHE1Zw==
+      !binary "RXRhZw==":
+      - !binary |-
+        ImFhZjhkNDJhMjQ1YjcyZDhjODhkY2U4ZjQ5N2EzODA0OGNmY2ZkOTEi
+      !binary "WC1Xb3JrZXItTm9kZQ==":
+      - !binary |-
+        MjkwMmE6MjAyMjg=
+      !binary "WC1SYXRlbGltaXQtUmVtYWluaW5n":
+      - !binary |-
+        MTk=
+      !binary "U2VydmVy":
+      - !binary |-
+        VG9ybmFkb1NlcnZlci8yLjQuMQ==
+      !binary "WC1SYXRlbGltaXQtTGltaXQ=":
+      - !binary |-
+        MjA=
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bWF4LWFnZT04NjQwMA==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
+      - !binary |-
+        Kg==
+      !binary "WC1SYXRlbGltaXQtVXNlZA==":
+      - !binary |-
+        MQ==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        S2VlcC1hbGl2ZQ==
+      !binary "S2VlcC1BbGl2ZQ==":
+      - !binary |-
+        dGltZW91dD0xNSwgbWF4PTEwMA==
+      !binary "Vmlh":
+      - !binary |-
+        MS4xIElELTAwMDA2Mjc1MDEyMjM2NjYgdXByb3h5LTI=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyZXNwb25zZSI6IHsic3RhdHVzIjogeyJ2ZXJzaW9uIjogIjQuMiIsICJj
+        b2RlIjogMCwgIm1lc3NhZ2UiOiAiU3VjY2VzcyJ9LCAiYXJ0aXN0IjogeyJm
+        b3JlaWduX2lkcyI6IFt7ImNhdGFsb2ciOiAicmRpby1VUyIsICJmb3JlaWdu
+        X2lkIjogInJkaW8tVVM6YXJ0aXN0OnI5MTMxOCJ9XSwgImlkIjogIkFSSDZX
+        NFgxMTg3Qjk5Mjc0RiIsICJuYW1lIjogIlJhZGlvaGVhZCJ9fX0=
+    http_version: 
+  recorded_at: Fri, 19 Apr 2013 17:15:42 GMT
+- request:
+    method: post
+    uri: http://api.rdio.com/1/
+    body:
+      encoding: US-ASCII
+      string: method=getTracksForArtist&artist=r91318&count=1
+    headers:
+      User-Agent:
+      - Faraday v0.8.7
+      Authorization:
+      - OAuth oauth_consumer_key="p3kgnybu9qgrdr22xe558q2v", oauth_nonce="2ac74bb109ee7724d9b4fc1cf11c9163",
+        oauth_signature="2u3WJz9jfymdM2PcuK85k60CO2E%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1366392108", oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Mashery-Responder:
+      - mashery-web4-lax.mashery.com
+      Server:
+      - nginx/1.2.4
+      Date:
+      - Fri, 19 Apr 2013 17:21:44 GMT
+      Content-Type:
+      - application/json
+      Connection:
+      - keep-alive
+      X-Srv:
+      - srv-108-09
+      Content-Language:
+      - en
+      Vary:
+      - Accept-Language, Cookie
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - ! '*'
+      P3p:
+      - CP="This is not a P3P policy. See http://www.rdio.com/legal/privacy-policy
+        for more info."
+      X-Version:
+      - '720'
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '915'
+    body:
+      encoding: US-ASCII
+      string: ! '{"status": "ok", "result": [{"radioKey": "sr2062726|3", "baseIcon":
+        "album/4/3/f/0000000000029f34/square-200.jpg", "canDownloadAlbumOnly": false,
+        "artistUrl": "/artist/Radiohead/", "duration": 383, "album": "OK Computer
+        (Collector''s Edition)", "isClean": false, "albumUrl": "/artist/Radiohead/album/OK_Computer_(Collector%27s_Edition)/",
+        "shortUrl": "http://rd.io/x/QitdJsU/", "albumArtist": "Radiohead", "canStream":
+        true, "embedUrl": "https://rd.io/e/QitdJsU/", "type": "t", "price": "None",
+        "trackNum": 2, "albumArtistKey": "r91318", "key": "t2062726", "icon": "http://cdn3.rd.io/album/4/3/f/0000000000029f34/square-200.jpg",
+        "canSample": true, "name": "Paranoid Android", "isExplicit": false, "artistKey":
+        "r91318", "url": "/artist/Radiohead/album/OK_Computer_(Collector%27s_Edition)/track/Paranoid_Android/",
+        "albumKey": "a171828", "artist": "Radiohead", "canDownload": false, "length":
+        1, "canTether": true}]}'
+    http_version: 
+  recorded_at: Fri, 19 Apr 2013 17:21:49 GMT
+recorded_with: VCR 2.4.0
