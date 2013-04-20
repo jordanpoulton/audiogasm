@@ -12,11 +12,3 @@ $('.album').on('mouseleave', function (){
   });
 
 })
-
-// $('.album').on('mouseenter', function (){
-    
-//   });
-
-// $('.album').on('mouseleave', function (){
-    
-// });
