@@ -1,11 +1,11 @@
 body {
   color: white;
   font-family: 'Abel', sans-serif;
-  background-color: red;
-  /*background-image: url(http://blog.svconline.com/briefingroom/wp-content/uploads/2009/07/garage3a.jpg);
+  background-color: black;
+  background-image: url(/assets/results-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-*/
+
 /*http://balletmina.files.wordpress.com/2011/06/ln-may11-by-william-4.jpg
 http://s3.amazonaws.com/rpsmedia/Frigg_live2.jpg
 http://fum-music.com/FUM_Media/FUM_Live_pix.jpg
@@ -215,6 +215,7 @@ form {
   width: 200px;
 }
 .album {
+  margin-left: 10px;
   text-align: center;
   height: 400px;
 }
@@ -278,7 +279,7 @@ background-image: -webkit-gradient(
   margin-left: 0;
   margin-top: 10px;
   margin-bottom: 30px;
-  background: rgba(255, 255, 255, 0.1);
+ /* background: rgba(255, 255, 255, 0.1);*/
 }
 
 .icon-headphones {
@@ -286,7 +287,7 @@ background-image: -webkit-gradient(
 }
 
 .user_input {
-  /*display: none;*/
+  display: none;
   /*position: relative;*/
 }
 
@@ -303,10 +304,23 @@ background-image: -webkit-gradient(
 
 .get-started {
   /*position: absolute;*/
+  text-align: center;
   background-color: gold;
-  height: 50px;
-  margin-right: 50px;
+  height: 62px;
+  margin-left: 300px;
   border-bottom-right-radius: 300%;
   border-bottom-left-radius: 300%;  
 
+}
+
+.results-background {
+  background: rgba(0, 0, 0, 0.25);
+  padding-top: 30px;
+  padding-left: 10px;
+  border-radius: 8px;
+  padding-bottom: 30px;
+}
+
+.icon-arrow-down {
+  color: black;
 }
