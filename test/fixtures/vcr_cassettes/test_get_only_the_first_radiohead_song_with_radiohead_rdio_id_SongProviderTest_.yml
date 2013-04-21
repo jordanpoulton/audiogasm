@@ -137,4 +137,49 @@ http_interactions:
         1, "canTether": true}]}'
     http_version: 
   recorded_at: Fri, 19 Apr 2013 17:21:49 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/profile?api_key=&bucket=id:rdio-US&format=json&id=songkick:artist:253846
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 400
+      message: !binary |-
+        QmFkIFJlcXVlc3Q=
+    headers:
+      !binary "RGF0ZQ==":
+      - !binary |-
+        RnJpLCAxOSBBcHIgMjAxMyAxODowMjozOCBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        dGV4dC9odG1sOyBjaGFyc2V0PVVURi04
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        OTI=
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        N2VMdGtHcWhUREticmoydy9iNjZMUQ==
+      !binary "U2VydmVy":
+      - !binary |-
+        VG9ybmFkb1NlcnZlci8yLjQuMQ==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        S2VlcC1hbGl2ZQ==
+      !binary "S2VlcC1BbGl2ZQ==":
+      - !binary |-
+        dGltZW91dD0xNSwgbWF4PTEwMA==
+      !binary "Vmlh":
+      - !binary |-
+        MS4xIElELTAwMDA2Mjc1MDEyMjM2NjYgdXByb3h5LTI=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyZXNwb25zZSI6IHsic3RhdHVzIjogeyJ2ZXJzaW9uIjogIjQuMiIsICJj
+        b2RlIjogMSwgIm1lc3NhZ2UiOiAiMXxJbnZhbGlkIGtleTogVW5rbm93biJ9
+        fX0=
+    http_version: 
+  recorded_at: Fri, 19 Apr 2013 18:02:38 GMT
 recorded_with: VCR 2.4.0

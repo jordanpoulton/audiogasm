@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.songkick.com/api/3.0/search/locations.json?apikey=Hkockg21oUnNQEZa&query=jalilililili%20uk
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "RGF0ZQ==":
+      - !binary |-
+        RnJpLCAxOSBBcHIgMjAxMyAxODoxMTo1MiBHTVQ=
+      !binary "U3RhdHVz":
+      - !binary |-
+        MjAwIE9L
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        cHJpdmF0ZSwgbWF4LWFnZT0zNjAw
+      !binary "RXhwaXJlcw==":
+      - !binary |-
+        RnJpLCAxOSBBcHIgMjAxMyAxOToxMTo1MiBHTVQ=
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyZXN1bHRzUGFnZSI6eyJzdGF0dXMiOiJvayIsInJlc3VsdHMiOnt9LCJw
+        ZXJQYWdlIjo1MCwicGFnZSI6MSwidG90YWxFbnRyaWVzIjowfX0=
+    http_version: 
+  recorded_at: Fri, 19 Apr 2013 18:11:52 GMT
+recorded_with: VCR 2.4.0
