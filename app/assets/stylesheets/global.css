@@ -1,10 +1,14 @@
 body {
   color: white;
   font-family: 'Abel', sans-serif;
-  background-image: url(/assets/Diplo-III.jpg);
+  background-color: red;
+  /*background-image: url(http://blog.svconline.com/briefingroom/wp-content/uploads/2009/07/garage3a.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-
+*/
+/*http://balletmina.files.wordpress.com/2011/06/ln-may11-by-william-4.jpg
+http://s3.amazonaws.com/rpsmedia/Frigg_live2.jpg
+http://fum-music.com/FUM_Media/FUM_Live_pix.jpg
   /*background-image: linear-gradient(left top, rgb(13,13,12) 33%, rgb(112,122,121) 67%, rgb(189,180,178) 84%);
     background-image: -o-linear-gradient(left top, rgb(13,13,12) 33%, rgb(112,122,121) 67%, rgb(189,180,178) 84%);
     background-image: -moz-linear-gradient(left top, rgb(13,13,12) 33%, rgb(112,122,121) 67%, rgb(189,180,178) 84%);
@@ -21,8 +25,49 @@ body {
     );*/
 }
   
+
+   .bg {
+            position:fixed;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            z-index:1;
+        }
+
+        .bg-images {
+            width:100%;
+            height:100%;
+        }
+
+        .bg-img {
+            display:none;
+            position:absolute;
+            left:0;
+            top:0;
+            background-color:#000;
+            background-position:50% 50%;
+            background-repeat:no-repeat;
+            background-size:cover;
+            width:100%;
+            height:100%;
+        }
+
+        /* pick one background to show initially - first one */
+        .bg-img.festival {
+            display:block;
+        }
+
+        .bg-img.festival   { background-image:url(/assets/festival.jpg); }
+        .bg-img.dj   { background-image:url(/assets/Diplo-III.jpg); }
+        .bg-img.rock   { background-image:url(/assets/rock.jpg); }
+        .bg-img.classical     { background-image:url(/assets/classical.jpg); }
+        .bg-img.jazz     { background-image:url(/assets/jazz1.jpg); }
+
 .container {
   margin-bottom: 60px;
+    position:relative;
+            z-index:2;
 }
 
 .equaliser {
@@ -64,7 +109,7 @@ margin-right: 0.6em;
 }
 
 #description-text {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 form {
@@ -82,7 +127,7 @@ form {
  
 }
 .form-background {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.25);
   padding-top: 30px;
   padding-left: 20px;
   border-radius: 8px;
@@ -240,8 +285,28 @@ background-image: -webkit-gradient(
   color: gold;
 }
 
+.user_input {
+  /*display: none;*/
+  /*position: relative;*/
+}
 
 .playing-text {
   display: none;
   margin-left: 20px;
+}
+
+.started-text {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+}
+
+.get-started {
+  /*position: absolute;*/
+  background-color: gold;
+  height: 50px;
+  margin-right: 50px;
+  border-bottom-right-radius: 300%;
+  border-bottom-left-radius: 300%;  
+
 }

@@ -1,6 +1,11 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
+  <meta charset="utf-8">
+  <!--[if lt IE 9]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
   <title>Audiogasm</title>
   <link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
@@ -12,6 +17,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+   <div class="bg">
+            <div class="bg-img festival"></div>
+            <div class="bg-img dj"></div>
+            <div class="bg-img rock"></div>
+            <div class="bg-img classical"></div>
+            <div class="bg-img jazz"></div>
+        </div>
 <div class="container span12 offset2">
   <%= render 'layouts/header' %>
 
