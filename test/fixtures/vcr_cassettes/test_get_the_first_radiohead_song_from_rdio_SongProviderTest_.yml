@@ -2,109 +2,6 @@
 http_interactions: 
 - request: 
     method: get
-    uri: http://developer.echonest.com/api/v4/artist/profile?api_key=SYT5EOFXZFDBJFV2P&bucket=id:rdio-US&format=json&id=songkick:artist:253846
-    body: 
-      encoding: US-ASCII
-      string: ""
-    headers: {}
-
-  response: 
-    status: 
-      code: 200
-      message: OK
-    headers: 
-      Date: 
-      - Mon, 22 Apr 2013 10:17:11 GMT
-      Content-Type: 
-      - application/json; charset=utf-8
-      Content-Length: 
-      - "218"
-      Vary: 
-      - Accept-Encoding
-      X-Request-Id: 
-      - vk0A/aQgTqa+6d8AZeRhBw
-      Etag: 
-      - "\"aaf8d42a245b72d8c88dce8f497a38048cfcfd91\""
-      X-Worker-Node: 
-      - d1c7d:4941
-      X-Ratelimit-Remaining: 
-      - "19"
-      Server: 
-      - TornadoServer/2.4.1
-      X-Ratelimit-Limit: 
-      - "20"
-      Cache-Control: 
-      - max-age=86400
-      Access-Control-Allow-Origin: 
-      - "*"
-      X-Ratelimit-Used: 
-      - "1"
-      Connection: 
-      - Keep-alive
-      Keep-Alive: 
-      - timeout=15, max=100
-      Via: 
-      - 1.1 ID-0000627501223666 uproxy-2
-    body: 
-      encoding: ASCII-8BIT
-      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 0, \"message\": \"Success\"}, \"artist\": {\"foreign_ids\": [{\"catalog\": \"rdio-US\", \"foreign_id\": \"rdio-US:artist:r91318\"}], \"id\": \"ARH6W4X1187B99274F\", \"name\": \"Radiohead\"}}}"
-    http_version: 
-  recorded_at: Mon, 22 Apr 2013 10:17:17 GMT
-- request: 
-    method: post
-    uri: http://api.rdio.com/1/
-    body: 
-      encoding: US-ASCII
-      string: method=getTracksForArtist&artist=r91318&count=1
-    headers: 
-      User-Agent: 
-      - Faraday v0.8.7
-      Authorization: 
-      - OAuth oauth_consumer_key="p3kgnybu9qgrdr22xe558q2v", oauth_nonce="5b5d8581307984c75f5694be17fc5fa0", oauth_signature="j1KLfSbZXlCUd5l5mikg8JAJCnI%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1366631121", oauth_version="1.0"
-      Content-Type: 
-      - application/x-www-form-urlencoded
-      Accept: 
-      - "*/*"
-  response: 
-    status: 
-      code: 200
-      message: OK
-    headers: 
-      X-Mashery-Responder: 
-      - mashery-web3-lax.mashery.com
-      Server: 
-      - nginx/1.2.4
-      Date: 
-      - Mon, 22 Apr 2013 11:45:19 GMT
-      Content-Type: 
-      - application/json
-      Connection: 
-      - keep-alive
-      X-Srv: 
-      - srv-208-06
-      Content-Language: 
-      - en
-      Vary: 
-      - Accept-Language, Cookie
-      Cache-Control: 
-      - no-cache
-      Access-Control-Allow-Origin: 
-      - "*"
-      P3p: 
-      - CP="This is not a P3P policy. See http://www.rdio.com/legal/privacy-policy for more info."
-      X-Version: 
-      - "720"
-      Accept-Ranges: 
-      - bytes
-      Content-Length: 
-      - "915"
-    body: 
-      encoding: US-ASCII
-      string: "{\"status\": \"ok\", \"result\": [{\"radioKey\": \"sr2062726|3\", \"baseIcon\": \"album/4/3/f/0000000000029f34/square-200.jpg\", \"canDownloadAlbumOnly\": false, \"artistUrl\": \"/artist/Radiohead/\", \"duration\": 383, \"album\": \"OK Computer (Collector's Edition)\", \"isClean\": false, \"albumUrl\": \"/artist/Radiohead/album/OK_Computer_(Collector%27s_Edition)/\", \"shortUrl\": \"http://rd.io/x/QitdJsU/\", \"albumArtist\": \"Radiohead\", \"canStream\": true, \"embedUrl\": \"https://rd.io/e/QitdJsU/\", \"type\": \"t\", \"price\": \"None\", \"trackNum\": 2, \"albumArtistKey\": \"r91318\", \"key\": \"t2062726\", \"icon\": \"http://cdn3.rd.io/album/4/3/f/0000000000029f34/square-200.jpg\", \"canSample\": true, \"name\": \"Paranoid Android\", \"isExplicit\": false, \"artistKey\": \"r91318\", \"url\": \"/artist/Radiohead/album/OK_Computer_(Collector%27s_Edition)/track/Paranoid_Android/\", \"albumKey\": \"a171828\", \"artist\": \"Radiohead\", \"canDownload\": false, \"length\": 1, \"canTether\": true}]}"
-    http_version: 
-  recorded_at: Mon, 22 Apr 2013 11:45:23 GMT
-- request: 
-    method: get
     uri: http://developer.echonest.com/api/v4/artist/profile?api_key=&bucket=id:rdio-US&format=json&id=songkick:artist:253846
     body: 
       encoding: US-ASCII
@@ -117,13 +14,13 @@ http_interactions:
       message: Bad Request
     headers: 
       Date: 
-      - Mon, 22 Apr 2013 14:57:15 GMT
+      - Mon, 22 Apr 2013 15:45:55 GMT
       Content-Type: 
       - text/html; charset=UTF-8
       Content-Length: 
       - "92"
       X-Request-Id: 
-      - i1nfpbz0TzeT4x9EYeU02g
+      - G5fRd/xEQbGCX7aw+YctDw
       Server: 
       - TornadoServer/2.4.1
       Connection: 
@@ -131,10 +28,10 @@ http_interactions:
       Keep-Alive: 
       - timeout=15, max=100
       Via: 
-      - 1.1 ID-0000627501223666 uproxy-3
+      - 1.1 ID-0000627501223666 uproxy-2
     body: 
       encoding: ASCII-8BIT
       string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 1, \"message\": \"1|Invalid key: Unknown\"}}}"
     http_version: 
-  recorded_at: Mon, 22 Apr 2013 14:57:16 GMT
+  recorded_at: Mon, 22 Apr 2013 15:45:56 GMT
 recorded_with: VCR 2.4.0
