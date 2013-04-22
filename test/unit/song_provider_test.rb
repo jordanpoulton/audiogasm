@@ -25,4 +25,4 @@ class SongProviderTest < Test::Unit::TestCase
     rdio_radiohead_id = SongProvider.get_rdio_artist_id(@songkick_radiohead_id)
     assert_equal 'https://rd.io/e/QitdJsU/', @song.get_song_from_rdio(@songkick_radiohead_id, count =1)
   end
-end 
+end
