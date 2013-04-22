@@ -9,8 +9,16 @@ class Gig
     @venue = venue
   end
 
-end
+  def song(artist_id)
 
-  # http = Curl.get("http://api.songkick.com/api/3.0/events.json?location=sk:24426&min_date=2013-04-18&max_date=2013-04-19&page=1&per_page=10&apikey=Hkockg21oUnNQEZa")
-  # JSON.parse(http.body_str)["resultsPage"]["results"]["event"][0]["venue"]["displayName"]
-  # Gets the venue name
+  end
+
+  def self.find(location, from, to, genre)
+    gigs = GigInfoProvider.new(location, from, to).get_upcoming_gigs
+    gigs.detect {|gig| gig.artist_id.detect{ |artist| ArtistFilterInfoProvider.check_artist_is_of_genre(artist, genre)}}
+
+    # upcoming_gigs = find_upcoming_gigs
+    # filter_by_genre(upcoming_gigs)
+  end
+
+end

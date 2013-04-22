@@ -1,7 +1,6 @@
 Audiogasm::Application.routes.draw do
 
   root to: 'search#new'
-  resources :songs, only: :show
   resource :search, only: [:show, :new], controller: :search
   # match '/playlist', to: 'main#playlist_page'
   # The priority is based upon order of creation:

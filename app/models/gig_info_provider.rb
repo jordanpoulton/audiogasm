@@ -26,7 +26,7 @@ class GigInfoProvider
 
   def expected_number_of_pages
     number_of_results = api_event_call["resultsPage"]["totalEntries"].to_i
-    number_of_pages = (number_of_results / ENTRIES_PER_PAGE).floor
+    number_of_pages = (number_of_results / ENTRIES_PER_PAGE).ceil
   end
 
   def create_list_of_events_from_api(api_call)
