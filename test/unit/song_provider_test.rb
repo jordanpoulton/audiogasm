@@ -22,8 +22,7 @@ class SongProviderTest < Test::Unit::TestCase
   end
 
   test 'get the first radiohead song from rdio' do
-    radio_artist_id = SongProvider.get_rdio_artist_id(@songkick_radiohead_id)
-    assert_equal 'https://rd.io/e/QitdJsU/', get_song_from_rdio
+    assert_equal 'https://rd.io/e/QitdJsU/', SongProvider.get_song_from_rdio(@songkick_radiohead_id)
   end
 
   # test 'get only the first radiohead song with radiohead rdio id' do
