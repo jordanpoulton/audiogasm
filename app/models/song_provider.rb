@@ -26,6 +26,6 @@ class SongProvider
    def self.get_song_from_rdio(songkick_artist_id, count =1)
     rdio_artist_id = SongProvider.get_rdio_artist_id(songkick_artist_id)
     get_track = RDIO_API.getTracksForArtist(:artist => "#{rdio_artist_id}", :count => "#{count}")[0]
-    get_track_embed_url = get_track.embedUrl
+    track_url = get_track.embedUrl
   end
 end
