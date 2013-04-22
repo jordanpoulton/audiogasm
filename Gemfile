@@ -48,9 +48,9 @@ gem 'jquery-rails'
 
 # To use debugger
 gem 'debugger'
-# gem 'rdio_api', :git => "git://github.com/anilv/rdio_api.git"
-# gem 'vcr'
-# gem 'webmock'
+gem 'rdio_api', :git => "git://github.com/anilv/rdio_api.git"
+gem 'vcr'
+gem 'webmock'
 
 
 # gem 'echonest-ruby-api', :git => "git@github.com:makersacademy/echonest-ruby-api.git"

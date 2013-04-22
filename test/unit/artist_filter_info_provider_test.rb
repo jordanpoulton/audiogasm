@@ -37,3 +37,4 @@ class ArtistFilterInfoProviderTest < ActiveSupport::TestCase
   end
 
 end
+

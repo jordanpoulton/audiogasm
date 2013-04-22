@@ -3,8 +3,8 @@ require 'test_helper'
 class GigInfoProviderTest < ActiveSupport::TestCase
 
   def setup
-    @gig_filter = GigInfoProvider.new('london', Date.today, Date.today)
-    @gig_filter_invalid = GigInfoProvider.new('jalilililili', Date.today, Date.today)
+    @gig_info_request = GigInfoProvider.new('london', Date.today, Date.today)
+    @gig_info_request_invalid = GigInfoProvider.new('jalilililili', Date.today, Date.today)
     VCR.insert_cassette name
   end
 
