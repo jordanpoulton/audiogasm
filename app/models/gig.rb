@@ -9,8 +9,11 @@ class Gig
     @venue = venue
   end
 
-  def song(artist_id)
-
+  def song
+    artist = @artist_id.sample
+    song = SongProvider.new
+    rdio_id = song.get_rdio_artist_id(artist)
+    song.get_song_from_rdio(artist)
   end
 
   def self.find(location, from, to, genre)

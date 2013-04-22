@@ -23,8 +23,7 @@ class GigTest < Test::Unit::TestCase
   end
 
   test 'get song' do
-
-
+    gig = Gig.find(@location, @from, @to, @genre)
+    assert_equal gig.song, "https://rd.io/e/QitDxirG/"
   end
-
 end

@@ -47,7 +47,7 @@ class GigInfoProvider
 
 
 
-  def get_location_id#tested
+  def get_location_id
     if parse_results_of(api_location_call)["resultsPage"]["totalEntries"].to_i == 0
       raise "Location not in database"
     else
@@ -55,15 +55,15 @@ class GigInfoProvider
     end
   end
 
-  def api_location_call#tested
+  def api_location_call
     Curl.get("http://api.songkick.com/api/3.0/search/locations.json?query=#{@location}%20#{@country}&apikey=#{API_KEY}")
   end
 
-  def parse_location_id_from(api_response)#tested
+  def parse_location_id_from(api_response)
     parse_results_of(api_response)["resultsPage"]["results"]["location"][0]["metroArea"]["id"]
   end
 
-  def parse_results_of(api_response) #tested
+  def parse_results_of(api_response)
     JSON.parse(api_response.body_str)
   end
 end
