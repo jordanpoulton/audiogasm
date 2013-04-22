@@ -21,8 +21,13 @@ class SongProviderTest < Test::Unit::TestCase
     assert_raise (RuntimeError){SongProvider.get_rdio_artist_id(@invalid_artist_id)}
   end
 
-  test 'get only the first radiohead song with radiohead rdio id' do
-    rdio_radiohead_id = SongProvider.get_rdio_artist_id(@songkick_radiohead_id)
-    assert_equal 'https://rd.io/e/QitdJsU/', @song.get_song_from_rdio(@songkick_radiohead_id, count =1)
+  test 'get the first radiohead song from rdio' do
+    radio_artist_id = SongProvider.get_rdio_artist_id(@songkick_radiohead_id)
+    assert_equal 'https://rd.io/e/QitdJsU/', get_song_from_rdio
   end
+
+  # test 'get only the first radiohead song with radiohead rdio id' do
+  #   rdio_radiohead_id = SongProvider.get_rdio_artist_id(@songkick_radiohead_id)
+  #   assert_equal 'https://rd.io/e/QitdJsU/', @song.get_song_from_rdio(@songkick_radiohead_id, count =1)
+  # end
 end
