@@ -3,8 +3,8 @@ require 'test_helper'
 class GigInfoProviderTest < ActiveSupport::TestCase
 
   def setup
-    @gig_filter = GigInfoProvider.new('london', Date.today, Date.today)
-    @gig_filter_invalid = GigInfoProvider.new('jalilililili', Date.today, Date.today)
+    @gig_info_request = GigInfoProvider.new('london', Date.today, Date.today)
+    @gig_info_request_invalid = GigInfoProvider.new('jalilililili', Date.today, Date.today)
     VCR.insert_cassette name
   end
 
@@ -12,32 +12,35 @@ class GigInfoProviderTest < ActiveSupport::TestCase
     VCR.eject_cassette
   end
 
+
   test 'has a location when initialized' do
-    @gig_filter
-    assert_equal "london", @gig_filter.location
+    @gig_info_request
+    assert_equal "london", @gig_info_request.location
   end
 
   test 'has a from date when initialized' do
-    @gig_filter
-    assert_equal Date.today, @gig_filter.from
+    @gig_info_request
+    assert_equal Date.today, @gig_info_request.from
   end
 
   test 'has a to date when initialized' do
-    @gig_filter
-    assert_equal Date.today, @gig_filter.to
-  end
-
-  test 'can get metro_area_id for london' do
-    assert_equal 24426, @gig_filter.get_location_id
+    @gig_info_request
+    assert_equal Date.today, @gig_info_request.to
   end
 
   test 'can get an area id for a location' do
-    assert_equal @gig_filter.get_location_id, 24426
+    assert_equal @gig_info_request.get_location_id, 24426
   end
 
   test 'returns readable error message if location not found' do
-    assert_raise (RuntimeError) { @gig_filter_invalid.get_location_id }
+    assert_raise (RuntimeError) { @gig_info_request_invalid.get_location_id }
   end
+
+  test 'can successfully make a request to songkick event API' do
+    assert_not_nil @gig_info_request.api_event_call["resultsPage"]["totalEntries"]
+  end
+
+
 
 
   # test 'can get the id of an artist that is playing in specific metro_area_id and date' do
