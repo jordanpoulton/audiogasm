@@ -5,12 +5,17 @@ class ArtistFilterInfoProviderTest < ActiveSupport::TestCase
   ECHONEST_API_KEY = ENV['ECHONEST_API_KEY']
 
   def setup
+    VCR.insert_cassette name
     @radiohead_id = '253846'
     @radiohead_genres = ["rock", "alternative rock", "electronic", "alternative", "pop", "art rock", "90s", "electronica", "experimental", "modern rock", "post-punk", "jazz", "british pop", "experimental rock", "ambient", "british rock", "alternative pop rock", "indietronica", "grunge", "progressive rock", "80s", "indie", "soundtrack"]
     @invalid_artist = '1678900767865788'
     @user_genre_1 = "rock"
     @user_genre_2 = "jjjj"
     @artist_genres = []
+  end
+
+  def teardown
+    VCR.eject_cassette
   end
 
   test "can get a list of artist's genres" do

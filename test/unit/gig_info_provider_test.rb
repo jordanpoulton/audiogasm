@@ -5,6 +5,11 @@ class GigInfoProviderTest < ActiveSupport::TestCase
   def setup
     @gig_filter = GigInfoProvider.new('london', Date.today, Date.today)
     @gig_filter_invalid = GigInfoProvider.new('jalilililili', Date.today, Date.today)
+    VCR.insert_cassette name
+  end
+
+  def teardown
+    VCR.eject_cassette
   end
 
   test 'has a location when initialized' do

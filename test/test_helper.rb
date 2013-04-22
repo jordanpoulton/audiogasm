@@ -10,10 +10,13 @@ class ActiveSupport::TestCase
   # Add more helper methods to be used by all tests here...
 
 
-  VCR.config do |c|
+  VCR.configure do |c|
     c.stub_with :webmock
     c.cassette_library_dir = 'test/fixtures/vcr_cassettes'
-    c.default_cassette_options = { :record => :new_episodes }
+    c.default_cassette_options = {
+      :record => :new_episodes,
+      :serialize_with => :syck
+    }
   end
-  
+
 end
