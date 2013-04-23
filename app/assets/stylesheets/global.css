@@ -2,9 +2,9 @@ body {
   color: white;
   font-family: 'Abel', sans-serif;
   background-color: black;
-  background-image: url(/assets/results-bg.jpg);
+  /*background-image: url(/assets/results-bg.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
 
 /*http://balletmina.files.wordpress.com/2011/06/ln-may11-by-william-4.jpg
 http://s3.amazonaws.com/rpsmedia/Frigg_live2.jpg
@@ -72,13 +72,16 @@ http://fum-music.com/FUM_Media/FUM_Live_pix.jpg
 
 .equaliser {
   text-align: center;
+  padding-left: 1.4em;
+  margin-right: 40px;
 }
 .main-header {
-  text-align: right;
   font-family: 'Audiowide', cursive;
   color:gold;
   font-size: 4em;
+  /*margin: auto;*/
   margin-top: 0.4em;
+
 }
 
 .title {
@@ -112,9 +115,15 @@ margin-right: 0.6em;
   margin-bottom: 20px;
 }
 
+.intro-box {
+  /*margin-left: 200px;*/
+}
+
 form {
+
   color: gold;
   text-align: center;
+  margin: 0 auto;
   margin-top: 3em;
   margin-bottom: 2em;
 }
@@ -127,11 +136,13 @@ form {
  
 }
 .form-background {
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.4);
   padding-top: 30px;
   padding-left: 20px;
+  padding-right: 20px;
   border-radius: 8px;
   padding-bottom: 30px;
+  margin-left: 0;
 }
 .form-space {
    margin-bottom: 1.5em;
@@ -307,7 +318,9 @@ background-image: -webkit-gradient(
   text-align: center;
   background-color: gold;
   height: 62px;
-  margin-left: 300px;
+   margin: 0 auto;
+  width: 140px;
+  /*margin-left: 300px;*/
   border-bottom-right-radius: 300%;
   border-bottom-left-radius: 300%;  
 
@@ -324,3 +337,7 @@ background-image: -webkit-gradient(
 .icon-arrow-down {
   color: black;
 }
+
+/*.started {
+  margin: 0 auto;
+}*/
