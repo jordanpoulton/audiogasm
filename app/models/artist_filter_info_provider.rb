@@ -15,7 +15,8 @@ class ArtistFilterInfoProvider
 
   def self.check_artist_is_of_genre(artist_id, genre)
     artist_genres = get_artist_genres(artist_id)
-    artist_genres.detect { |item| return true if item == genre}
-    false
+    artist_genres.include?(genre)
+    # artist_genres.detect { |item| return true if item == genre}
+    # false
   end
 end

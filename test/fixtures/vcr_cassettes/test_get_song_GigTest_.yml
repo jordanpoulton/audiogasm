@@ -508,5 +508,105 @@ http_interactions:
       encoding: US-ASCII
       string: "{\"status\": \"ok\", \"result\": [{\"radioKey\": \"sr21531102|3\", \"baseIcon\": \"album/f/2/2/00000000001e822f/4/square-200.jpg\", \"canDownloadAlbumOnly\": false, \"artistUrl\": \"/artist/...And_You_Will_Know_Us_By_The_Trail_Of_Dead/\", \"duration\": 301, \"album\": \"Lost Songs\", \"isClean\": false, \"albumUrl\": \"/artist/...And_You_Will_Know_Us_By_The_Trail_Of_Dead/album/Lost_Songs/\", \"shortUrl\": \"http://rd.io/x/QitDF8qB/\", \"albumArtist\": \"...And You Will Know Us By The Trail Of Dead\", \"canStream\": true, \"embedUrl\": \"https://rd.io/e/QitDF8qB/\", \"type\": \"t\", \"price\": \"None\", \"trackNum\": 1, \"albumArtistKey\": \"r32008\", \"key\": \"t21531102\", \"icon\": \"http://cdn3.rd.io/album/f/2/2/00000000001e822f/4/square-200.jpg\", \"canSample\": true, \"name\": \"Open Doors\", \"isExplicit\": false, \"artistKey\": \"r32008\", \"url\": \"/artist/...And_You_Will_Know_Us_By_The_Trail_Of_Dead/album/Lost_Songs/track/Open_Doors/\", \"albumKey\": \"a1999407\", \"artist\": \"...And You Will Know Us By The Trail Of Dead\", \"canDownload\": false, \"length\": 1, \"canTether\": true}]}"
     http_version: 
-  recorded_at: Tue, 23 Apr 2013 11:17:39 GMT
+  recorded_at: Tue, 23 Apr 2013 08:42:59 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:4083611
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Date: 
+      - Tue, 23 Apr 2013 09:50:29 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Content-Length: 
+      - "356"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - Pe3Oq58rQbOFo7GMJaaYrg
+      Etag: 
+      - "\"45dc823dc4ab582ae1147f76cf59160c931cb4b5\""
+      X-Worker-Node: 
+      - 2d6ca:32221
+      X-Ratelimit-Remaining: 
+      - "19"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      Cache-Control: 
+      - max-age=86400
+      Access-Control-Allow-Origin: 
+      - "*"
+      X-Ratelimit-Used: 
+      - "1"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-2
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 0, \"message\": \"Success\"}, \"start\": 0, \"terms\": [{\"frequency\": 0.2424363553033474, \"name\": \"desert blues\", \"weight\": 0.24377224199288255}, {\"frequency\": 0.48329608408804592, \"name\": \"blues\", \"weight\": 0.17348754448398576}, {\"frequency\": 0.45322209966426996, \"name\": \"rock\", \"weight\": 0.1094306049822064}]}}"
+    http_version: 
+  recorded_at: Tue, 23 Apr 2013 09:50:29 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:35658
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Date: 
+      - Tue, 23 Apr 2013 09:50:46 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Content-Length: 
+      - "1634"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - lW9jOqwAR2uI3L00EtoTAQ
+      Etag: 
+      - "\"7b9cae957f98f0bdddf825d9c9b3040e0c6398bf\""
+      X-Worker-Node: 
+      - 20284:24257
+      X-Ratelimit-Remaining: 
+      - "16"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      Cache-Control: 
+      - max-age=86400
+      Access-Control-Allow-Origin: 
+      - "*"
+      X-Ratelimit-Used: 
+      - "4"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-3
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 0, \"message\": \"Success\"}, \"start\": 0, \"terms\": [{\"frequency\": 1.0, \"name\": \"hip hop\", \"weight\": 1.0}, {\"frequency\": 0.68528097576409486, \"name\": \"rap\", \"weight\": 0.69382151029748285}, {\"frequency\": 0.5652590794021326, \"name\": \"r&b\", \"weight\": 0.62059496567505723}, {\"frequency\": 0.60183266011869718, \"name\": \"soul\", \"weight\": 0.50755148741418765}, {\"frequency\": 0.34573527480912275, \"name\": \"80s\", \"weight\": 0.35011441647597252}, {\"frequency\": 0.076127129511789404, \"name\": \"experimental rap\", \"weight\": 0.20411899313501145}, {\"frequency\": 0.083413772308959078, \"name\": \"old school rap\", \"weight\": 0.1931350114416476}, {\"frequency\": 0.084310940069617604, \"name\": \"east coast hip hop\", \"weight\": 0.19130434782608696}, {\"frequency\": 0.084916633321072965, \"name\": \"pop rap\", \"weight\": 0.19084668192219681}, {\"frequency\": 0.085861623610599111, \"name\": \"hardcore hip hop\", \"weight\": 0.18993135011441648}, {\"frequency\": 0.090015209173058483, \"name\": \"hardcore rap\", \"weight\": 0.1839816933638444}, {\"frequency\": 0.18157389165414564, \"name\": \"soundtrack\", \"weight\": 0.18306636155606407}, {\"frequency\": 0.16696958957543054, \"name\": \"90s\", \"weight\": 0.16613272311212815}, {\"frequency\": 0.11582988594441784, \"name\": \"old school\", \"weight\": 0.15377574370709382}, {\"frequency\": 0.13445905933632576, \"name\": \"funk\", \"weight\": 0.13546910755148742}, {\"frequency\": 0.15320836563127363, \"name\": \"jazz\", \"weight\": 0.11807780320366133}, {\"frequency\": 0.15778997233771044, \"name\": \"pop\", \"weight\": 0.11487414187643021}, {\"frequency\": 0.17389359866958898, \"name\": \"rock\", \"weight\": 0.10205949656750572}]}}"
+    http_version: 
+  recorded_at: Tue, 23 Apr 2013 09:50:46 GMT
 recorded_with: VCR 2.4.0
