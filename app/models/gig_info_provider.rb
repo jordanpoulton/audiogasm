@@ -34,18 +34,17 @@ class GigInfoProvider
   end
 
   def create_gig_from_event(event)
-    artists   = event['performance'].map{|p| p['artist']['id'] }
-    location  = event["location"]["city"]
-    date      = event['start']['datetime']
-    venue     = event['venue']['displayName']
-    Gig.new(artists, location, date, venue)
+    artists     = event['performance'].map{|p| p['artist']['id'] }
+    location    = event["location"]["city"]
+    date        = event['start']['datetime']
+    venue       = event['venue']['displayName']
+    ticket_link = event['uri']
+    Gig.new(artists, location, date, venue, ticket_link)
   end
 
   def api_event_call(page = 1)
     parse_results_of(Curl.get("http://api.songkick.com/api/3.0/events.json?location=sk:#{get_location_id}&min_date=#{@from}&max_date=#{@to}&page=#{page}&per_page=#{PAGE_RESULTS}&apikey=#{API_KEY}"))
   end
-
-
 
   def get_location_id
     if parse_results_of(api_location_call)["resultsPage"]["totalEntries"].to_i == 0

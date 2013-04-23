@@ -3,15 +3,14 @@ require 'test_helper'
 class GigInfoProviderTest < ActiveSupport::TestCase
 
   def setup
-    @gig_info_request = GigInfoProvider.new('london', Date.today, Date.today)
-    @gig_info_request_invalid = GigInfoProvider.new('jalilililili', Date.today, Date.today)
+    @gig_info_request = GigInfoProvider.new('london', '2013-04-25', '2013-04-26' )
+    @gig_info_request_invalid = GigInfoProvider.new('jalilililili', '2013-04-25', '2013-04-26')
     VCR.insert_cassette name
   end
 
   def teardown
     VCR.eject_cassette
   end
-
 
   test 'has a location when initialized' do
     @gig_info_request
@@ -20,12 +19,12 @@ class GigInfoProviderTest < ActiveSupport::TestCase
 
   test 'has a from date when initialized' do
     @gig_info_request
-    assert_equal Date.today, @gig_info_request.from
+    assert_equal '2013-04-25', @gig_info_request.from
   end
 
   test 'has a to date when initialized' do
     @gig_info_request
-    assert_equal Date.today, @gig_info_request.to
+    assert_equal '2013-04-26', @gig_info_request.to
   end
 
   test 'can get an area id for a location' do

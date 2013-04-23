@@ -1,12 +1,13 @@
 class Gig
 
-  attr_reader :artist_id, :location, :date, :venue
+  attr_reader :artist_id, :location, :date, :venue, :ticket_link
 
-  def initialize(artist_id, location, date, venue)
+  def initialize(artist_id, location, date, venue, ticket_link)
     @artist_id = artist_id
     @location = location
     @date = date
     @venue = venue
+    @ticket_link = ticket_link
   end
 
   def song
@@ -22,5 +23,4 @@ class Gig
   def check_gig_is_valid(genre)
     self.artist_id.any? {|artist| ArtistFilterInfoProvider.check_artist_is_of_genre(artist, genre)}
   end
-
 end
