@@ -1,28 +1,70 @@
-<h1> Welcome to your first Audiogasm </h1>
 
-<div class='user_input'>
-
-  <%= form_tag(search_path, method: 'get') do %>
-    <div class='location_input'>
-      <%= label_tag "Where do you want to go out?: " %>
-      <%= text_field_tag 'location' %>
+    <div class="bg">
+      <div class="bg-img festival"></div>
+      <div class="bg-img dj"></div>
+      <div class="bg-img rock"></div>
+      <div class="bg-img classical"></div>
+      <div class="bg-img jazz"></div>
     </div>
 
-    <div class='date_input'>
-      <%= label_tag "When do you want to go out?: From " %>
-      <%= text_field_tag 'from' %>
-      <%= label_tag " To: " %>
-      <%= text_field_tag 'to' %>
-    </div>
+<div class="container">
+  <div class="row intro">
+    <div class="span8 offset2 intro-box">
+      <div class="form-background">
 
-    <div class='genre_input'>
-      <%= label_tag "What are you into?: " %>
-      <%= select_tag 'genre', options_for_select(["Rock", "Pop", "Dance", "Drum and Bass", "Breaks", "Classical", "Ambient", "Folk"], "Pop" ), :multiple => false %>
-    </div>
+        <h1 class="title"> Locate. Listen. Live. </h1>
 
-    <div class="submit_input">
-      <%= submit_tag "Make me a playlist" %>
-    </div>
-  <% end %>
-</div>
+        <h3 id="description-text">Audiogasm connects you to the live music playing in your area that you want to see. Pick a location, date range, and desired music genre, and Audiogasm will do the rest, letting you listen to the matching artists playing nearby, with links to buy tickets to any gigs that you like the sound of. Simple!  </h3>
+
+        <div class='user_input'>
+
+          <%= form_tag(search_path, method: 'get') do %>  #should this be post not get?
+            <div class='form-space location_input'>
+              <%= label_tag "Where do you want to go out? " %>
+              <%= text_field_tag 'location' %> 
+            </div>
+
+            <div class='form-space date_input'>
+              <%= label_tag "When do you want to go out?" %>
+              <div>
+                <div class="inline">
+                  <div class="from-to">
+                    <%= label_tag "From: " %>
+                  </div>
+                    <%= text_field_tag 'from' %>
+                </div>
+              </div>
+              <div>
+                <div class="inline">
+                  <div class="from-to">
+                    <%= label_tag "To: " %>
+                  </div>
+                    <%= text_field_tag 'to' %>
+                </div>
+              </div>
+            </div>
+
+            <div class='form-space genre_input'>
+              <%= label_tag "What music are you in to? " %>
+              <%= select_tag 'genre', options_for_select(["Rock", "Pop", "Dance", "Drum and Bass", "Breaks", "Classical", "Ambient", "Folk"], "Pop" ), :multiple => false %>
+            </div>
+
+            <div class="button submit_input">
+              <%= submit_tag "Make me a playlist" %>
+            </div>
+
+          <% end %>
+        </div>  <!--close user_input class -->    
+  
+      </div> <!-- close form-background class-->
+        <div class="row started">
+          <div class="get-started">
+            <h4 class="started-text">Get started</h4>
+            <i class="icon-arrow-down icon-large"></i>
+          </div>
+        </div> <!--close row started class -->
+    </div> <!--close span8 offset2 intro-box class -->
+  </div> <!--close row intro class -->
+</div> <!--close container class -->
+
 

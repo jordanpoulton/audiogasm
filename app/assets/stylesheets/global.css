@@ -1,0 +1,345 @@
+body {
+  color: white;
+  font-family: 'Abel', sans-serif;
+  background-color: black;
+  /*background-image: url(/assets/results-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;*/
+
+/*http://balletmina.files.wordpress.com/2011/06/ln-may11-by-william-4.jpg
+http://s3.amazonaws.com/rpsmedia/Frigg_live2.jpg
+http://fum-music.com/FUM_Media/FUM_Live_pix.jpg
+  /*background-image: linear-gradient(left top, rgb(13,13,12) 33%, rgb(112,122,121) 67%, rgb(189,180,178) 84%);
+    background-image: -o-linear-gradient(left top, rgb(13,13,12) 33%, rgb(112,122,121) 67%, rgb(189,180,178) 84%);
+    background-image: -moz-linear-gradient(left top, rgb(13,13,12) 33%, rgb(112,122,121) 67%, rgb(189,180,178) 84%);
+    background-image: -webkit-linear-gradient(left top, rgb(13,13,12) 33%, rgb(112,122,121) 67%, rgb(189,180,178) 84%);
+    background-image: -ms-linear-gradient(left top, rgb(13,13,12) 33%, rgb(112,122,121) 67%, rgb(189,180,178) 84%);
+
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      color-stop(0.33, rgb(13,13,12)),
+      color-stop(0.67, rgb(112,122,121)),
+      color-stop(0.84, rgb(189,180,178))
+    );*/
+}
+  
+
+   .bg {
+            position:fixed;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            z-index:1;
+        }
+
+        .bg-images {
+            width:100%;
+            height:100%;
+        }
+
+        .bg-img {
+            display:none;
+            position:absolute;
+            left:0;
+            top:0;
+            background-color:#000;
+            background-position:50% 50%;
+            background-repeat:no-repeat;
+            background-size:cover;
+            width:100%;
+            height:100%;
+        }
+
+        /* pick one background to show initially - first one */
+        .bg-img.festival {
+            display:block;
+        }
+
+        .bg-img.festival   { background-image:url(/assets/festival.jpg); }
+        .bg-img.dj   { background-image:url(/assets/Diplo-III.jpg); }
+        .bg-img.rock   { background-image:url(/assets/rock.jpg); }
+        .bg-img.classical     { background-image:url(/assets/classical.jpg); }
+        .bg-img.jazz     { background-image:url(/assets/jazz1.jpg); }
+
+.container {
+  margin-bottom: 60px;
+    position:relative;
+            z-index:2;
+}
+
+.equaliser {
+  text-align: center;
+  padding-left: 1.4em;
+  margin-right: 40px;
+}
+.main-header {
+  z-index: 2;
+  position: relative;
+  font-family: 'Audiowide', cursive;
+  color:gold;
+  font-size: 4em;
+  /*margin: auto;*/
+  margin-top: 0.4em;
+
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+a {
+  color: white
+}
+
+a:hover {
+  text-decoration: none;
+  color: gold;
+}
+
+.intro {
+  margin-top: 3em;
+}
+
+.icons {
+  margin-top: 1.7em;
+  text-align: right;
+}
+.icon-twitter {
+  margin-left: 0.8em;
+margin-right: 0.6em;
+}
+
+#description-text {
+  margin-bottom: 20px;
+}
+
+.intro-box {
+  /*margin-left: 200px;*/
+}
+
+form {
+
+  color: gold;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+
+.label {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+ 
+}
+.form-background {
+  background: rgba(0, 0, 0, 0.4);
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 8px;
+  padding-bottom: 30px;
+  margin-left: 0;
+}
+.form-space {
+   margin-bottom: 1.5em;
+}
+
+.form-space label {
+  font-weight: bold;
+ font-size: 22px;
+ margin-bottom: 10px;
+}
+
+.form-space input {
+  width: 300px;
+ 
+}
+.form-space select {
+  width: 300px;
+  margin-bottom: 25px;
+  font-family: 'Abel', sans-serif;
+  font-size: 20px;
+}
+.form-space select option > * {
+  
+}
+.inline {
+  display: inline-block;
+  position: relative;
+}
+
+.from-to{
+  color: white;
+  position: absolute;
+  left:-75px;
+  top: 5px;
+}
+
+
+
+.button input {
+  background-color: gold;
+  font-size: 20px;
+  font-family: 'Abel', sans-serif;
+  font-weight: bolder;
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 5px 5px 5px black;
+}
+
+.ticket-btn {
+  background-color: gold;
+  font-size: 20px;
+  font-family: 'Abel', sans-serif;
+  font-weight: bolder;
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 5px 5px 5px black;
+}
+
+.listing {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.gold {
+  color: gold;
+}
+
+.tickets {
+  text-align: center;
+  margin-left: 0;
+  margin-top: 160px;
+}
+
+.info {
+  width: 200px;
+}
+.album {
+  margin-left: 10px;
+  text-align: center;
+  height: 400px;
+}
+
+.player {
+  display: none;
+  position: absolute;
+  text-align: center;
+  opacity: 0.8;
+  left:-30px;
+  top: 341px;  
+  background-color: grey;
+  background-image: linear-gradient(left top, rgb(180,182,184) 25%, rgb(94,104,112) 63%, rgb(110,120,125) 82%);
+background-image: -o-linear-gradient(left top, rgb(180,182,184) 25%, rgb(94,104,112) 63%, rgb(110,120,125) 82%);
+background-image: -moz-linear-gradient(left top, rgb(180,182,184) 25%, rgb(94,104,112) 63%, rgb(110,120,125) 82%);
+background-image: -webkit-linear-gradient(left top, rgb(180,182,184) 25%, rgb(94,104,112) 63%, rgb(110,120,125) 82%);
+background-image: -ms-linear-gradient(left top, rgb(180,182,184) 25%, rgb(94,104,112) 63%, rgb(110,120,125) 82%);
+
+background-image: -webkit-gradient(
+  linear,
+  left top,
+  right bottom,
+  color-stop(0.25, rgb(180,182,184)),
+  color-stop(0.63, rgb(94,104,112)),
+  color-stop(0.82, rgb(110,120,125))
+);
+  padding-top: 8px;
+  padding-bottom: 8px;
+ 
+}
+
+.icon {
+  margin-left: 40px;
+}
+
+.artist {
+  margin-bottom: 30px;
+}
+
+.album {
+  background-image: url("http://img.cdandlp.com/2012/09/imgL/115569818.jpg");
+  background-size: 100%;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  height: 400px;
+}
+
+.song-album {
+  background-color: grey;
+  opacity: 0.75;
+  text-align: left;
+  position: absolute;
+  left: -30px;
+  top: 0px;
+}
+
+.skip {
+  text-align: center;
+  padding-left: 20px;
+  margin-left: 0;
+  margin-top: 10px;
+  margin-bottom: 30px;
+ /* background: rgba(255, 255, 255, 0.1);*/
+}
+
+.icon-headphones {
+  color: gold;
+}
+
+.user_input {
+  display: none;
+  /*position: relative;*/
+}
+
+.playing-text {
+  display: none;
+  margin-left: 20px;
+}
+
+.started-text {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+}
+
+.get-started {
+  /*position: absolute;*/
+  text-align: center;
+  background-color: gold;
+  height: 62px;
+   margin: 0 auto;
+  width: 140px;
+  /*margin-left: 300px;*/
+  border-bottom-right-radius: 300%;
+  border-bottom-left-radius: 300%;  
+
+}
+
+.results-background {
+  background: rgba(0, 0, 0, 0.25);
+  padding-top: 30px;
+  padding-left: 10px;
+  border-radius: 8px;
+  padding-bottom: 30px;
+}
+
+.icon-arrow-down {
+  color: black;
+}
+
+/*.started {
+  margin: 0 auto;
+}*/
