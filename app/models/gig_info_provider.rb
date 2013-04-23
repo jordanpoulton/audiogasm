@@ -34,11 +34,12 @@ class GigInfoProvider
   end
 
   def create_gig_from_event(event)
-    artists   = event['performance'].map{|p| p['artist']['id'] }
-    location  = event["location"]["city"]
-    date      = event['start']['datetime']
-    venue     = event['venue']['displayName']
-    Gig.new(artists, location, date, venue)
+    artists     = event['performance'].map{|p| p['artist']['id'] }
+    location    = event["location"]["city"]
+    date        = event['start']['datetime']
+    venue       = event['venue']['displayName']
+    ticket_link = event['uri']
+    Gig.new(artists, location, date, venue, ticket_link)
   end
 
   def api_event_call(page = 1)
