@@ -17,10 +17,10 @@ class Gig
 
   def self.find(location, from, to, genre)
     gigs = GigInfoProvider.new(location, from, to).get_upcoming_gigs
-    gigs.detect {|gig| gig.check_gig_is_valid(genre) }
+    gigs.detect {|gig| gig.is_artist_valid?(genre) }
   end
 
   def check_gig_is_valid(genre)
-    self.artist_id.any? {|artist| ArtistFilterInfoProvider.check_artist_is_of_genre(artist, genre)}
+    self.artist_id.any? {|artist| ArtistFilterInfoProvider.is_artist_valid?(artist, genre)}
   end
 end
