@@ -13,3 +13,6 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore VCR cassette files
+/test/fixtures/vcr_cassettes

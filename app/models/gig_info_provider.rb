@@ -45,8 +45,6 @@ class GigInfoProvider
     parse_results_of(Curl.get("http://api.songkick.com/api/3.0/events.json?location=sk:#{get_location_id}&min_date=#{@from}&max_date=#{@to}&page=#{page}&per_page=#{PAGE_RESULTS}&apikey=#{API_KEY}"))
   end
 
-
-
   def get_location_id
     if parse_results_of(api_location_call)["resultsPage"]["totalEntries"].to_i == 0
       raise "Location not in database"
