@@ -21,8 +21,8 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'twitter-bootstrap-rails'
-  # gem "less-rails", "~> 2.3.2"
-  # gem "therubyracer", "~> 0.11.4"
+  gem "less-rails", "~> 2.3.2"
+  gem "therubyracer", "~> 0.11.4"
   gem "font-awesome-rails"
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
