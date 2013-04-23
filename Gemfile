@@ -56,6 +56,7 @@ gem 'rdio_api', :git => "git://github.com/anilv/rdio_api.git"
 group :test do
   gem 'vcr'
   gem 'webmock', '~> 1.8.0'
+  gem 'rspec'
 end
 
 
