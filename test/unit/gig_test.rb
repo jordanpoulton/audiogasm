@@ -16,7 +16,7 @@ class GigTest < Test::Unit::TestCase
 
   test 'find gig' do
     gig = Gig.find(@location, @from, @to, @genre)
-    assert_equal gig.songkick_artist_id, [4301]
+    assert_equal gig.artist_id, [4301]
     assert_equal gig.location, "London, UK"
     assert_equal gig.date, "2013-04-25T22:00:00+0000"
     assert_equal gig.venue, "O2 Academy Islington"
