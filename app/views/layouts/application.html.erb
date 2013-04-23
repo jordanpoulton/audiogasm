@@ -11,28 +11,18 @@
   <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+  <%= yield :stylesheet %>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
   <%= csrf_meta_tags %>
 </head>
 <body class="<%= controller_name -%> <%= action_name -%>">
-  <div class="bg">
-            <div class="bg-img festival"></div>
-            <div class="bg-img dj"></div>
-            <div class="bg-img rock"></div>
-            <div class="bg-img classical"></div>
-            <div class="bg-img jazz"></div>
-        </div>
-<div class="container">
+
   <%= render 'layouts/header' %>
 
 
-  <div class="row intro">
-    <div class="span8 offset2 intro-box"><%= yield %></div>
-      
-    </div>
-  </div>
+  <%= yield %>
 
 
 <% if ENV['RAILS_ENV'].to_s == 'development' %>

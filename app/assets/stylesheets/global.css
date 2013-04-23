@@ -76,6 +76,8 @@ http://fum-music.com/FUM_Media/FUM_Live_pix.jpg
   margin-right: 40px;
 }
 .main-header {
+  z-index: 2;
+  position: relative;
   font-family: 'Audiowide', cursive;
   color:gold;
   font-size: 4em;
