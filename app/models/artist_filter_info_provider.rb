@@ -11,7 +11,7 @@ class ArtistFilterInfoProvider
       "Couldn't find artist"
   end
 
-  def self.check_artist_is_of_genre(artist_id, genre)
+  def self.is_artist_valid?(artist_id, genre)
     artist_genres = get_artist_genres(artist_id)
     artist_genres.include?(genre)
   end

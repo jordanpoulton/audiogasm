@@ -25,11 +25,11 @@ class ArtistFilterInfoProviderTest < ActiveSupport::TestCase
   end
 
   test "return true Artist's genres match user requested genres" do
-    assert ArtistFilterInfoProvider.check_artist_is_of_genre(@radiohead_id, @user_genre_1)
+    assert ArtistFilterInfoProvider.is_artist_valid?(@radiohead_id, @user_genre_1)
   end
 
   test "returns false if artist does not match genre" do
-    refute ArtistFilterInfoProvider.check_artist_is_of_genre(@radiohead_id, @user_genre_2)
+    refute ArtistFilterInfoProvider.is_artist_valid?(@radiohead_id, @user_genre_2)
   end
 
   test "returns 'couldn't find artist' if artist if unrecognised" do
