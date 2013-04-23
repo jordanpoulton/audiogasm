@@ -38,7 +38,7 @@ class SearchControllerTest < ActionController::TestCase
   end
 
   def show_search
-    @gig = mock(Gig, song: 'Lalala')
+    @gig = mock(Gig, song: 'Lalala', location: 'london', date: '2013-04-25', venue: "Jordan's Hut", ticket_link: 'www.blah.com')
     Gig.should_receive(:find).with('london', '2013-04-25', '2013-04-25', 'rock').and_return(@gig)
     get :show, {:location => 'london', :from => '2013-04-25', :to => '2013-04-25', :genre => 'ROCK'}
   end
