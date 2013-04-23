@@ -1,9 +1,9 @@
 class Gig
 
-  attr_reader :artist_id, :location, :date, :venue
+  attr_reader :songkick_artist_id, :location, :date, :venue
 
-  def initialize(artist_id, location, date, venue)
-    @artist_id = artist_id
+  def initialize(songkick_artist_id, location, date, venue)
+    @songkick_artist_id = songkick_artist_id
     @location = location
     @date = date
     @venue = venue

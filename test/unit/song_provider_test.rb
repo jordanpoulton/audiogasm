@@ -6,7 +6,6 @@ class SongProviderTest < Test::Unit::TestCase
     @songkick_radiohead_id = '253846'
     @invalid_artist_id = '1678900767865788'
     VCR.insert_cassette name
-    @song = SongProvider.new
   end
 
   def teardown
@@ -14,15 +13,14 @@ class SongProviderTest < Test::Unit::TestCase
   end
 
   test 'can get rdio artist id with radiohead songkick id' do
-    assert_equal 'r91318', @song.get_rdio_artist_id(@songkick_radiohead_id)
+    assert_equal 'r91318', SongProvider.get_rdio_artist_id(@songkick_radiohead_id)
   end
 
   test 'cannot get rdio artist id with invalid songkick id' do
-    assert_raise (RuntimeError){@song.get_rdio_artist_id(@invalid_artist_id)}
+    assert_raise (RuntimeError) { SongProvider.get_rdio_artist_id(@invalid_artist_id) }
   end
 
-  test 'get only the first radiohead song with radiohead rdio id' do
-    rdio_radiohead_id = @song.get_rdio_artist_id(@songkick_radiohead_id)
-    assert_equal 'https://rd.io/e/QitdJsU/', @song.get_song_from_rdio(rdio_radiohead_id, count =1)
+  test 'get the first radiohead song from rdio' do
+    assert_equal 'https://rd.io/e/QitdJsU/', SongProvider.get_song_from_rdio(@songkick_radiohead_id)
   end
 end

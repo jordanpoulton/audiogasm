@@ -1,53 +1,87 @@
----
-http_interactions:
-- request:
+--- 
+http_interactions: 
+- request: 
     method: get
-    uri: http://developer.echonest.com/api/v4/artist/profile?api_key=SYT5EOFXZFDBJFV2P&bucket=id:rdio-US&format=json&id=songkick:artist:1678900767865788
-    body:
+    uri: http://developer.echonest.com/api/v4/artist/profile?api_key=&bucket=id:rdio-US&format=json&id=songkick:artist:1678900767865788
+    body: 
       encoding: US-ASCII
       string: ""
     headers: {}
 
-  response:
-    status:
+  response: 
+    status: 
+      code: 400
+      message: Bad Request
+    headers: 
+      Date: 
+      - Mon, 22 Apr 2013 15:38:17 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "92"
+      X-Request-Id: 
+      - s7GjhvMQS3OLS8jsEWBKog
+      Server: 
+      - TornadoServer/2.4.1
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-3
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 1, \"message\": \"1|Invalid key: Unknown\"}}}"
+    http_version: 
+  recorded_at: Mon, 22 Apr 2013 15:38:17 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/profile?api_key=SYT5EOFXZFDBJFV2P&bucket=id:rdio-US&format=json&id=songkick:artist:1678900767865788
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
       code: 200
       message: OK
-    headers:
-      Date:
-      - Mon, 22 Apr 2013 09:27:37 GMT
-      Content-Type:
+    headers: 
+      Date: 
+      - Mon, 22 Apr 2013 15:54:37 GMT
+      Content-Type: 
       - application/json; charset=utf-8
-      Content-Length:
+      Content-Length: 
       - "109"
-      Vary:
+      Vary: 
       - Accept-Encoding
-      X-Request-Id:
-      - m53FoKjhRs2UwC3PlvQ1yw
-      Etag:
+      X-Request-Id: 
+      - Y1+rBrE6Qh+Nbu5iC8E1mg
+      Etag: 
       - "\"42a882dfcf6bbeb8ac977f08bfcd17e468b3d069\""
-      X-Worker-Node:
-      - 962d4:1368
-      X-Ratelimit-Remaining:
-      - "15"
-      Server:
+      X-Worker-Node: 
+      - 962d4:3818
+      X-Ratelimit-Remaining: 
+      - "19"
+      Server: 
       - TornadoServer/2.4.1
-      X-Ratelimit-Limit:
+      X-Ratelimit-Limit: 
       - "20"
-      Cache-Control:
+      Cache-Control: 
       - max-age=86400
-      Access-Control-Allow-Origin:
+      Access-Control-Allow-Origin: 
       - "*"
-      X-Ratelimit-Used:
-      - "5"
-      Connection:
+      X-Ratelimit-Used: 
+      - "1"
+      Connection: 
       - Keep-alive
-      Keep-Alive:
+      Keep-Alive: 
       - timeout=15, max=100
-      Via:
-      - 1.1 ID-0000627501223666 uproxy-2
-    body:
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-3
+    body: 
       encoding: ASCII-8BIT
       string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 5, \"message\": \"The Identifier specified does not exist\"}}}"
-    http_version:
-  recorded_at: Mon, 22 Apr 2013 09:27:37 GMT
+    http_version: 
+  recorded_at: Mon, 22 Apr 2013 15:54:38 GMT
 recorded_with: VCR 2.4.0
