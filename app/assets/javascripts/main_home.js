@@ -4,4 +4,4 @@ $(function() {
       $( ".date_input input" ).datepicker( "option", "dateFormat", $( this ).val() );
     });
   });
-});
+);
