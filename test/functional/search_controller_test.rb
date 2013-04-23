@@ -1,17 +1,18 @@
 require 'test_helper'
+require 'rspec/mocks'
 
 class SearchControllerTest < ActionController::TestCase
 
   def setup
-    #   @where = 'london'
-    #   @min_date = '2013-04-21'
-    #   @max_date = '2013-04-22'
-    # @what = 'rock'
-    VCR.insert_cassette name
+    RSpec::Mocks.setup(self)
   end
 
   def teardown
-    VCR.eject_cassette
+    begin
+      RSpec::Mocks.verify
+    ensure
+      RSpec::Mocks.teardown
+    end
   end
 
   test 'gets search form' do
@@ -20,15 +21,25 @@ class SearchControllerTest < ActionController::TestCase
     assert_template 'search/new'
   end
 
-  # test 'can search for a song' do
-  #   get :show, :location => 'london', :from => '2013-04-21', :to => '2013-04-21', :what => 'rock'
-  #   assert_template 'search/show'
-  #   assert_equal assigns(:gig), 'foo'
-  #   # assert assigns @song
-  # end
+  test 'gets search results page' do
+    show_search
+    assert_response :success
+    assert_template 'search/show'
+  end
 
+  test 'finds gig from search results' do
+    show_search
+    assert_equal @gig, assigns(:gig)
+  end
 
-  test 'validates the correct data when searching for a song' do
+  test 'finds song from search results' do
+    show_search
+    assert_equal 'Lalala', assigns(:song)
+  end
 
+  def show_search
+    @gig = mock(Gig, song: 'Lalala')
+    Gig.should_receive(:find).with('london', '2013-04-25', '2013-04-25', 'rock').and_return(@gig)
+    get :show, {:location => 'london', :from => '2013-04-25', :to => '2013-04-25', :genre => 'ROCK'}
   end
 end
