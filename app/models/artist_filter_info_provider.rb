@@ -4,19 +4,27 @@ class ArtistFilterInfoProvider
 
 
   def self.get_artist_genres(artist_id)
-    http = Curl.get("http://developer.echonest.com/api/v4/artist/terms?api_key=#{ECHONEST_API_KEY}&id=songkick:artist:#{artist_id}&format=json")
-    json_hash = JSON.parse(http.body_str)
-    if json_hash["response"]["status"]["message"] == "Success"
-      json_hash['response']['terms'].map{|e| e["name"] }
-    else
-      return "Couldn't find artist"
-    end
+      genres_from(
+        terms_in(
+          parsed_api_call(artist_id)))
+    rescue
+      "Couldn't find artist"
   end
 
   def self.check_artist_is_of_genre(artist_id, genre)
     artist_genres = get_artist_genres(artist_id)
     artist_genres.include?(genre)
-    # artist_genres.detect { |item| return true if item == genre}
-    # false
+  end
+
+  def self.parsed_api_call(artist_id)
+    JSON.parse(Curl.get("http://developer.echonest.com/api/v4/artist/terms?api_key=#{ECHONEST_API_KEY}&id=songkick:artist:#{artist_id}&format=json").body_str)
+  end
+
+  def self.terms_in(api_response)
+    api_response['response']['terms']
+  end
+
+  def self.genres_from(api_terms)
+    api_terms.map{|term| term['name']}
   end
 end
