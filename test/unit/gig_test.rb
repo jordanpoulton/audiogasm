@@ -26,4 +26,10 @@ class GigTest < Test::Unit::TestCase
     gig = Gig.find(@location, @from, @to, @genre)
     assert_equal "https://rd.io/e/QitDF8qB/", gig.song
   end
+
+  # test 'can get a second song' do
+  #   gig = Gig.find(@location, @from, '2013-04-30', @genre, 2)
+  #   assert_not_equal "https://rd.io/e/QitDF8qB/", gig.song
+  # end
 end
+
