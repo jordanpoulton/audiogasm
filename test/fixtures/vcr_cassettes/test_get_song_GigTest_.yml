@@ -18199,4 +18199,1516 @@ http_interactions:
       string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 0, \"message\": \"Success\"}, \"start\": 0, \"terms\": [{\"frequency\": 0.68803065995972557, \"name\": \"lo-fi\", \"weight\": 1.0}, {\"frequency\": 0.49237639534780436, \"name\": \"shoegaze\", \"weight\": 0.82901554404145072}, {\"frequency\": 0.78412131946748476, \"name\": \"alternative\", \"weight\": 0.772020725388601}, {\"frequency\": 0.64049371367615393, \"name\": \"christian\", \"weight\": 0.67357512953367871}, {\"frequency\": 0.37836816978465376, \"name\": \"screamo\", \"weight\": 0.67357512953367871}, {\"frequency\": 0.45414390766754209, \"name\": \"new wave\", \"weight\": 0.58549222797927458}, {\"frequency\": 1.0, \"name\": \"rock\", \"weight\": 0.58549222797927458}, {\"frequency\": 0.49672952859345026, \"name\": \"r&b\", \"weight\": 0.54404145077720212}, {\"frequency\": 0.55296498373651837, \"name\": \"metal\", \"weight\": 0.48704663212435234}, {\"frequency\": 0.15555877603458418, \"name\": \"christian hard rock\", \"weight\": 0.37823834196891193}, {\"frequency\": 0.15490623552822219, \"name\": \"christian metalcore\", \"weight\": 0.37823834196891193}, {\"frequency\": 0.163536859488039, \"name\": \"melodic metalcore\", \"weight\": 0.36787564766839376}, {\"frequency\": 0.16900437091958403, \"name\": \"emocore\", \"weight\": 0.35751295336787564}, {\"frequency\": 0.17511261776562889, \"name\": \"noise pop\", \"weight\": 0.35233160621761656}, {\"frequency\": 0.17977126678866762, \"name\": \"dream pop\", \"weight\": 0.34196891191709844}, {\"frequency\": 0.19196702849085842, \"name\": \"christian rock\", \"weight\": 0.33160621761658032}, {\"frequency\": 0.19722281278911932, \"name\": \"power metal\", \"weight\": 0.32642487046632124}, {\"frequency\": 0.19803214740130018, \"name\": \"post-hardcore\", \"weight\": 0.32124352331606215}, {\"frequency\": 0.20336305705558297, \"name\": \"emo\", \"weight\": 0.31606217616580312}, {\"frequency\": 0.19964238441718879, \"name\": \"metalcore\", \"weight\": 0.31606217616580312}, {\"frequency\": 0.2067118130855958, \"name\": \"indie pop\", \"weight\": 0.31088082901554404}, {\"frequency\": 0.21920054343897166, \"name\": \"pop rock\", \"weight\": 0.29533678756476683}, {\"frequency\": 0.23027889136021304, \"name\": \"heavy metal\", \"weight\": 0.28497409326424872}, {\"frequency\": 0.23522520236457115, \"name\": \"hard rock\", \"weight\": 0.27979274611398963}, {\"frequency\": 0.24989058928432697, \"name\": \"hardcore\", \"weight\": 0.26943005181347152}, {\"frequency\": 0.24836968870647333, \"name\": \"experimental\", \"weight\": 0.26424870466321243}, {\"frequency\": 0.29963861803073749, \"name\": \"pop\", \"weight\": 0.21761658031088082}]}}"
     http_version: 
   recorded_at: Wed, 24 Apr 2013 14:37:00 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:6483289
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:19 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - fL++cIO8Qe2plA1xzoWnbA
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-3
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:18 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:5887729
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:19 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - nYNNsd4ZQKurJlYDxJyyZg
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-3
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:19 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:6483289
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:19 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - Uol8x1I3SeKusXmLu7PF/w
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-2
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:19 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:5887729
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:19 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - NJxr+Wn0TtGa2AGtWybzIA
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-3
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:19 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:5526408
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:19 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - led4UwnUSEW6PGTdNBQt5w
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-2
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:19 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:5526408
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:20 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - TRaV/EAHSJa4PE5dVpL/Kg
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-3
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:19 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:212477
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:20 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - CoBsa53KTsOfxI1w/HSvqQ
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-2
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:20 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:212477
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:20 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - VOQAETFxQ4KkN9vg6O9S0Q
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-3
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:20 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:773610
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:20 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - aORP4gIrQKeY6WtiBNQpGA
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-2
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:20 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:773610
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:20 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - Pgn7ryIMR9qrx5WtLlOjTw
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-2
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:20 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:134289
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:21 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - vfEGJ2v8ThKw6MZ9+5w2Aw
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-2
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:20 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:6688849
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:21 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - PhJp7f0bQ7CGafD20mpHoQ
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-3
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:20 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:1027908
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:21 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - ZYCcKEACREi4PMGw/iV2ug
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-2
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:21 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:3574971
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:21 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - 98ZEchzqR6uQkBbuCbosJA
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-3
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:21 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:712595
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:21 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - Qp+0BYMaTlm/tm1YL5gI4A
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-2
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:21 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:134289
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:22 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - 3d/ax8iTR+aCXOU0/XlfQw
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-3
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:21 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:6688849
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:22 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - Q/mP8p8bRm6rsg5U7HVWAQ
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-2
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:22 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:1027908
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:22 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - uOhmsUtDSWmtuojUp/s/+g
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-3
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:22 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:3574971
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:22 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - bVhcpEzlTEaan0NdCa8Zhg
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-2
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:22 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:712595
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:22 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - 7sELSK5qT1im2qOF1hj+hg
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-3
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:22 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:72964
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:23 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - 1QSL6tqmQBewTvjSZ9Sd5g
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-3
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:22 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:6586699
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:23 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - 6xd1GcHCSx+faSjs9Gr2JQ
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-2
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:22 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:2618521
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:23 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - Ih+kZGp4S4CZqHzMpbmwGg
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-3
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:23 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:72964
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:23 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - wUQtEunRSlekG63yjFJVYw
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-2
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:23 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:6586699
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:23 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - 2998HSlCSBWRxcqrNzS3wA
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-3
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:23 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:2618521
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:23 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - utOyoGqUSGadU2kE+0Us0Q
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-2
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:23 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:3689671
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:24 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - mwzVfQeETzCqsuFq5to+ZA
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-3
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:23 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:3689671
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:24 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - gPisxdEzTVqVZRBOOIrbaw
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-3
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:24 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:190266
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:24 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - xmt1rxNLTWOJHXkOgn2/jA
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-2
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:24 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:217905
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:24 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - QJU4cQz3Q6CHdlisvJquIQ
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-3
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:24 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:190266
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:24 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - 3PPYBdYhSH69+B58NB8R0g
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-2
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:24 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:217905
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:25 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - BqOtzIcuT5WgcA5eNSvp8g
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-3
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:24 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:6509484
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:25 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - qcC8CJaFTZuk4zM8CGWbAA
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-2
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:24 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:6509489
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:25 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - DhTOpEYpTQqE/JB37aNCAA
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-3
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:25 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:6509484
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:25 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - AO+o7RfQSxWuAJBzfTr7YA
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-2
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:25 GMT
+- request: 
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=SYT5EOFXZFDBJFV2P&format=json&id=songkick:artist:6509489
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 403
+      message: Forbidden
+    headers: 
+      Date: 
+      - Wed, 24 Apr 2013 14:54:25 GMT
+      Content-Type: 
+      - text/html; charset=UTF-8
+      Content-Length: 
+      - "217"
+      Vary: 
+      - Accept-Encoding
+      X-Request-Id: 
+      - Y3nE6yTrRA27DbCX5zScKQ
+      X-Ratelimit-Remaining: 
+      - "0"
+      Server: 
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit: 
+      - "20"
+      X-Ratelimit-Used: 
+      - "30"
+      Connection: 
+      - Keep-alive
+      Keep-Alive: 
+      - timeout=15, max=100
+      Via: 
+      - 1.1 ID-0000627501223666 uproxy-2
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 3, \"message\": \"3|You are limited to 20 accesses every minute. You might be eligible for a rate limit increase, go to http://developer.echonest.com/account/upgrade\"}}}"
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 14:54:25 GMT
 recorded_with: VCR 2.4.0

@@ -15,7 +15,7 @@ class ArtistFilterInfoProvider
 
   def self.is_artist_valid?(artist_id, genre)
       artist_genres = get_artist_genres(artist_id)
-      artist_genres.include?(genre) ? artist_id : false
+      artist_genres.include?(genre)
     rescue
       "We were unable to check artist validity"
   end
