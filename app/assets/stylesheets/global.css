@@ -25,6 +25,10 @@ http://fum-music.com/FUM_Media/FUM_Live_pix.jpg
     );*/
 }
   
+    iframe {
+      border: none;
+
+    }
 
    .bg {
             position:fixed;
