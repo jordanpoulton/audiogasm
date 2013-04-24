@@ -17,10 +17,10 @@ class SongProviderTest < Test::Unit::TestCase
   end
 
   test 'cannot get rdio artist id with invalid songkick id' do
-    assert_raise (RuntimeError) { SongProvider.get_rdio_artist_id(@invalid_artist_id) }
+    assert_equal "Artist not understood by Rdio", SongProvider.get_rdio_artist_id(@invalid_artist_id)
   end
 
   test 'get the first radiohead song from rdio' do
-    assert_equal 'https://rd.io/e/QitdJsU/', SongProvider.get_song_from_rdio(@songkick_radiohead_id)
+    assert_equal 'https://rd.io/e/QitdJsU/', SongProvider.get_track_embed_url(@songkick_radiohead_id)
   end
 end

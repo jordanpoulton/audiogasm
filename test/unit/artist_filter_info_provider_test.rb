@@ -33,11 +33,11 @@ class ArtistFilterInfoProviderTest < ActiveSupport::TestCase
   end
 
   test "returns 'couldn't find artist' if artist if unrecognised" do
-    assert_equal ArtistFilterInfoProvider.get_artist_genres(@invalid_artist), "Couldn't find artist"
+    assert_equal "Couldn't get artist genres", ArtistFilterInfoProvider.get_artist_genres(@invalid_artist)
   end
 
   test "gets readable error when invalid API request is made" do
-    assert_equal "Couldn't find artist", ArtistFilterInfoProvider.get_artist_genres(@invalid_artist)
+    assert_equal "Couldn't get artist genres", ArtistFilterInfoProvider.get_artist_genres(@invalid_artist)
   end
 
 end
