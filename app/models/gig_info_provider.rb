@@ -36,10 +36,16 @@ class GigInfoProvider
   def create_gig_from_event(event)
     artists     = event['performance'].map{|p| p['artist']['id'] }
     location    = event["location"]["city"]
-    date        = event['start']['datetime']
+    date        = extract_date_from(event['start']['datetime'])
     venue       = event['venue']['displayName']
     ticket_link = event['uri']
     Gig.new(artists, location, date, venue, ticket_link)
+  end
+
+  def extract_date_from(event)
+    event.to_date.strftime('%A, %d %B %Y')
+  rescue
+    'Date not set.'
   end
 
   def api_event_call(page = 1)
