@@ -12,8 +12,6 @@ gem 'guard'
 gem 'guard-test'
 gem 'rb-fsevent', '~> 0.9'
 
-gem 'timecop'
-
 
 # Gems used only for assets and not required
 # in production environments by default.
