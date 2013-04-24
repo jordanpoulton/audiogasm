@@ -272,15 +272,6 @@ background-image: -webkit-gradient(
   margin-bottom: 30px;
 }
 
-.album {
-  background-image: url("http://img.cdandlp.com/2012/09/imgL/115569818.jpg");
-  background-size: 100%;
-  position: relative;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  height: 400px;
-}
-
 .song-album {
   background-color: grey;
   opacity: 0.75;
