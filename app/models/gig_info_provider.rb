@@ -8,9 +8,14 @@ class GigInfoProvider
 
   def initialize(location, from, to, country = 'uk')
     @location = location
-    @from = from
-    @to = to
+    @from = GigInfoProvider.format_date(from)
+    @to = GigInfoProvider.format_date(to)
     @country = country
+  end
+
+  def self.format_date(date)
+    date = Date.parse(date)
+    date.strftime('%Y-%m-%d')
   end
 
   def get_upcoming_gigs

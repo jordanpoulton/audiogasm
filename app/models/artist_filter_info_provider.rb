@@ -3,6 +3,7 @@ class ArtistFilterInfoProvider
   ECHONEST_API_KEY = ENV['ECHONEST_API_KEY']
 
 
+
   def self.get_artist_genres(artist_id)
       genres_from(
         terms_in(
@@ -14,8 +15,9 @@ class ArtistFilterInfoProvider
   private
 
   def self.is_artist_valid?(artist_id, genre)
+      puts artist_id
       artist_genres = get_artist_genres(artist_id)
-      artist_genres.include?(genre) ? artist : false
+      artist_genres.include?(genre)
     rescue
       "We were unable to check artist validity"
   end
@@ -31,6 +33,6 @@ class ArtistFilterInfoProvider
   end
 
   def self.genres_from(api_terms)
-    api_terms.map{|term| term['name']}
+    api_terms.map{|term| puts "#{term['name']}"; term['name']}
   end
 end

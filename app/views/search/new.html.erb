@@ -21,7 +21,7 @@
           <%= form_tag(search_path, method: 'get') do %>
             <div class='form-space location_input'>
               <%= label_tag "Where do you want to go out? " %>
-              <%= text_field_tag 'location' %> 
+              <%= select_tag 'location', options_for_select(["Bath", "Birmingham", "Brighton", "Bristol", "Cardiff", "Edinburgh", "Glasgow", "Leeds", "Lincoln", "Liverpool", "London", "Manchester", "Newcastle", "Sheffield", "Stratford upon Avon"], "London" ), :multiple => false %>
             </div>
 
             <div class='form-space date_input'>
@@ -31,7 +31,7 @@
                   <div class="from-to">
                     <%= label_tag "From: " %>
                   </div>
-                    <%= text_field_tag 'from' %>
+                    <%= text_field_tag 'from', Date.today.strftime("%A, %e %B, %Y") , class: "date-picker" %>
                 </div>
               </div>
               <div>
@@ -39,7 +39,7 @@
                   <div class="from-to">
                     <%= label_tag "To: " %>
                   </div>
-                    <%= text_field_tag 'to' %>
+                      <%= text_field_tag 'to', Date.today.strftime("%A, %e %B, %Y"), class: "date-picker" %>
                 </div>
               </div>
             </div>
@@ -54,8 +54,8 @@
             </div>
 
           <% end %>
-        </div>  <!--close user_input class -->    
-  
+        </div>  <!--close user_input class -->
+
       </div> <!-- close form-background class-->
         <div class="row started">
           <div class="get-started">
