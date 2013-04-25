@@ -25,6 +25,6 @@ class Gig
   end
 
   def check_gig_is_valid(genre)
-    self.artist_id.any? {|artist| ArtistFilterInfoProvider.is_artist_valid?(artist, genre)}
+    self.artist_id.any? {|artist| ArtistFilter.is_artist_valid?(artist, genre)}
   end
 end
