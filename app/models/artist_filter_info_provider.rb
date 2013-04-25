@@ -15,7 +15,6 @@ class ArtistFilterInfoProvider
   def self.get_artist_name(artist_id)
     http = Curl.get("http://developer.echonest.com/api/v4/artist/profile?api_key=#{ECHONEST_API_KEY}&id=songkick:artist:#{artist_id}&format=json")
     json_hash = JSON.parse(http.body_str)
-    debugger
     if json_hash["response"]["status"]["message"] == "Success"
       json_hash['response']['artist']['name']
     else
