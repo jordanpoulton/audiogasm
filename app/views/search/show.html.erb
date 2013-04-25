@@ -5,28 +5,13 @@
 
 
         <div class="results-background">
-            <h1 class="title">Matching <i class="gold">need to add genre here or remove this</i> artists playing in <i class="gold"><%= @gig.location %></i> on <i class="gold"> <%= @gig.date %> </i></h1>
+            <h1 class="title">You're listening to <i class="gold"><%= @genre %></i> artists <br>
+              playing in <i class="gold"><%= @gig.location %></i> <br>
+              on <i class="gold"> <%= @gig.date %> </i></h1>
 
-          <!-- <div class="row skip">
-                <h3>Not so keen on what you're hearing? Skip to another artist</h3>
-            <div class="back-fwd span2 offset1">
-                <a href="#"><i class="icon-step-backward icon-3x"></i></a>
-                <p>Previous artist</p>
-            </div>
-
-            <div class="back-fwd span1">
-                  <i class="icon-headphones icon-4x"></i>
-            </div>
-
-            <div class="back-fwd span2">
-                  <a href="#"><i class="icon-step-forward icon-3x"></i></a>
-                  <p>Next artist</p>
-            </div>
-          </div> --> <!-- close row skip class  -->
-        
           <div class="row">
             <div class="listing span3">
-                <h3>Artist: <i class="gold">TO BE ADDED?</i></h3>
+                <h3>Artist: <i class="gold"><%= @artist %></i></h3>
                 <h3>Playing at: <i class="gold"> <%= @gig.venue %> </i></h3>
                <!--  <h3>On: <i class="gold"> <%= @gig.date %> </i></h3> -->
             </div> <!-- close listing span3 class  -->
@@ -42,6 +27,10 @@
                   <h2>Like what you're hearing?</h2>
                   <button class="ticket-btn"> <%= link_to 'Buy tickets!', @gig.ticket_link %> </button>
               </div>
+
+            <div class="album span5">  <!-- style= "background: url(http://img.cdandlp.com/2012/09/imgL/115569818.jpg, :height => 400) no-repeat;"> -->
+              <iframe src= <%= @gig.song %> > </iframe>
+              <h4>Click<i class="icon-play icon"></i> above to listen</h4>
             </div>
           
            <div class="row search-again">

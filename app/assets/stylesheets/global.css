@@ -24,7 +24,7 @@ http://fum-music.com/FUM_Media/FUM_Live_pix.jpg
       color-stop(0.84, rgb(189,180,178))
     );*/
 }
-  
+
     iframe {
       border: none;
       /*margin-right: 30px;*/
@@ -101,6 +101,7 @@ http://fum-music.com/FUM_Media/FUM_Live_pix.jpg
   text-align: center;
   padding-right: 40px;
   margin-bottom: 1em;
+  margin-right: 0.7em;
 }
 
 a {
@@ -147,7 +148,7 @@ form {
   width: 100%;
   text-align: center;
   margin-bottom: 30px;
- 
+
 }
 .form-background {
   background: rgba(0, 0, 0, 0.4);
@@ -170,7 +171,7 @@ form {
 
 .form-space input {
   width: 300px;
- 
+
 }
 .form-space select {
   width: 300px;
@@ -179,7 +180,7 @@ form {
   font-size: 20px;
 }
 .form-space select option > * {
-  
+
 }
 .inline {
   display: inline-block;
@@ -257,7 +258,7 @@ form {
   text-align: center;
   opacity: 0.8;
   left:-30px;
-  top: 341px;  
+  top: 341px;
   background-color: grey;
   background-image: linear-gradient(left top, rgb(180,182,184) 25%, rgb(94,104,112) 63%, rgb(110,120,125) 82%);
 background-image: -o-linear-gradient(left top, rgb(180,182,184) 25%, rgb(94,104,112) 63%, rgb(110,120,125) 82%);
@@ -275,7 +276,7 @@ background-image: -webkit-gradient(
 );
   padding-top: 8px;
   padding-bottom: 8px;
- 
+
 }
 
 .icon {
@@ -334,13 +335,13 @@ background-image: -webkit-gradient(
   width: 140px;
   /*margin-left: 300px;*/
   border-bottom-right-radius: 300%;
-  border-bottom-left-radius: 300%;  
+  border-bottom-left-radius: 300%;
 
 }
 
 .results-background {
   margin: 0 auto;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   padding-top: 30px;
   padding-left: 40px;
   /*padding-right: 40px;*/
@@ -376,21 +377,15 @@ background-image: -webkit-gradient(
 MEDIA QUERIES
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { 
+/*@media (min-width: 768px) and (max-width: 979px) { 
 
    .results-background {
       padding-right: 0;
     }
-
   }
 
 @media (max-width: 767px) { 
   .album {
     text-align: center;
   }
-
- 
-}
-/*.started {
-  margin: 0 auto;
 }*/
