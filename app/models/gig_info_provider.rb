@@ -50,7 +50,7 @@ class GigInfoProvider
   def extract_date_from(event)
     event.to_date.strftime('%A, %d %B %Y')
   rescue
-    'Date not set.'
+    'date not available'
   end
 
   def api_event_call(page = 1)
