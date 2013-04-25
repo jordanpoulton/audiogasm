@@ -2,8 +2,6 @@ class ArtistFilterInfoProvider
 
   ECHONEST_API_KEY = ENV['ECHONEST_API_KEY']
 
-
-
   def self.get_artist_genres(artist_id)
     genres_from(
       terms_in(
