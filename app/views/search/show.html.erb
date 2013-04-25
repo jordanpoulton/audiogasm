@@ -2,46 +2,39 @@
 <div class="container">
   <div class="row intro">
     <div class="span10 offset1 intro-box">
-
-
         <div class="results-background">
             <h1 class="title">You're listening to <i class="gold"><%= @genre %></i> artists <br>
               playing in <i class="gold"><%= @gig.location %></i> <br>
               on <i class="gold"> <%= @gig.date %> </i></h1>
-
           <div class="row">
             <div class="listing span3">
-                <h3>Artist: <i class="gold"><%= @artist %></i></h3>
-                <h3>Playing at: <i class="gold"> <%= @gig.venue %> </i></h3>
-               <!--  <h3>On: <i class="gold"> <%= @gig.date %> </i></h3> -->
+              <h3>Artist: <i class="gold"><%= @artist %></i></h3>
+              <h3>Playing at: <i class="gold"> <%= @gig.venue %> </i></h3>
+             <!--  <h3>On: <i class="gold"> <%= @gig.date %> </i></h3> -->
             </div> <!-- close listing span3 class  -->
 
-               <div class="album span5 offset1">  <!-- style= "background: url(http://img.cdandlp.com/2012/09/imgL/115569818.jpg, :height => 400) no-repeat;"> -->
-                            <iframe src= <%= @gig.song %> > </iframe> 
-                            <h4>Click<i class="icon-play icon"></i> above to listen</h4>
-                          </div>
+            <div class="album span5 offset1">  <!-- style= "background: url(http://img.cdandlp.com/2012/09/imgL/115569818.jpg, :height => 400) no-repeat;"> -->
+              <iframe src= <%= @gig.song %> > </iframe> 
+              <h4>Click<i class="icon-play icon"></i> above to listen</h4>
+            </div>
           </div> <!-- close row class  -->
 
-            <div class="row"> 
-              <div class="tickets"> 
-                  <h2>Like what you're hearing?</h2>
-                  <button class="ticket-btn"> <%= link_to 'Buy tickets!', @gig.ticket_link %> </button>
-              </div>
+          <div class="row"> 
+            <div class="tickets"> 
+                <h2>Like what you're hearing?</h2>
+                <button class="ticket-btn"> <%= link_to 'Buy tickets!', @gig.ticket_link %> </button>
+            </div>
 
             <div class="album span5">  <!-- style= "background: url(http://img.cdandlp.com/2012/09/imgL/115569818.jpg, :height => 400) no-repeat;"> -->
               <iframe src= <%= @gig.song %> > </iframe>
               <h4>Click<i class="icon-play icon"></i> above to listen</h4>
             </div>
           
-           <div class="row search-again">
+            <div class="row search-again">
               <h4> Not so keen? <%= link_to "Search again", root_url %></h4>
-           </div>
-
-         
-
-        </div>
-
-
+            </div>
+          </div>
+      </div>
     </div>
-  </div>
-</div> <!-- close conainer class  -->
+  </div> <!-- close conainer class  -->
+</div>
