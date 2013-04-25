@@ -44,6 +44,7 @@ class GigInfo
     date        = extract_date_from(event['start']['datetime'])
     venue       = event['venue']['displayName']
     ticket_link = event['uri']
+    puts 'Adding item to to GigsList'
     Gig.new(artists, location, date, venue, ticket_link)
   end
 

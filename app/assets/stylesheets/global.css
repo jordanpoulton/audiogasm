@@ -2,9 +2,9 @@ body {
   color: white;
   font-family: 'Abel', sans-serif;
   background-color: black;
-  /*background-image: url(/assets/results-bg.jpg);
+  background-image: url(/assets/results-bg.jpg);
   background-size: cover;
-  background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
 
 /*http://balletmina.files.wordpress.com/2011/06/ln-may11-by-william-4.jpg
 http://s3.amazonaws.com/rpsmedia/Frigg_live2.jpg
@@ -219,7 +219,7 @@ form {
   padding: 5px;
   padding-left: 20px;
   padding-right: 20px;
-  
+
 }
 
 .ticket-btn a {
@@ -246,7 +246,7 @@ form {
   width: 200px;
 }
 .album {
-  padding-top: 20px; 
+  padding-top: 20px;
   /*margin-left: 10px;*/
   text-align: right;
 
@@ -377,14 +377,14 @@ background-image: -webkit-gradient(
 MEDIA QUERIES
 
 /* Portrait tablet to landscape and desktop */
-/*@media (min-width: 768px) and (max-width: 979px) { 
+/*@media (min-width: 768px) and (max-width: 979px) {
 
    .results-background {
       padding-right: 0;
     }
   }
 
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
   .album {
     text-align: center;
   }

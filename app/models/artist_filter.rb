@@ -23,7 +23,7 @@ class ArtistFilter
   private
 
   def self.is_artist_valid?(artist_id, genre)
-    puts artist_id
+    puts "Checking validity of #{ArtistFilter.get_artist_name(artist_id)}"
     artist_genres = get_artist_genres(artist_id)
     artist_genres.include?(genre)
   rescue
@@ -41,6 +41,6 @@ class ArtistFilter
   end
 
   def self.genres_from(api_terms)
-    api_terms.map{|term| puts "#{term['name']}"; term['name']}
+    api_terms.map{|term| puts "Failed to match genre: #{term['name']}"; term['name']}
   end
 end
