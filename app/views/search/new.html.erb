@@ -9,12 +9,14 @@
 
 <div class="container">
   <div class="row intro">
-    <div class="span8 offset2 intro-box">
+    <div class="span6 offset3 intro-box">
       <div class="form-background">
 
         <h1 class="title"> Locate. Listen. Live. </h1>
 
-        <h3 id="description-text">Audiogasm connects you to the live music playing in your area that you want to see. Pick a location, date range, and desired music genre, and Audiogasm will do the rest, letting you listen to the matching artists playing nearby, with links to buy tickets to any gigs that you like the sound of. Simple!  </h3>
+        <h3 id="description-text">
+
+          Audiogasm connects you to the live music playing in your area that you want to see. Pick a location, date range, and desired music genre, and Audiogasm will do the rest, letting you listen to the matching artists playing nearby, with links to buy tickets to any gigs that you like the sound of. Simple!  </h3>
 
         <div class='user_input'>
 
@@ -28,7 +30,7 @@
               <%= label_tag "When do you want to go out?" %>
               <div>
                 <div class="inline">
-                  <div class="from-to">
+                  <div class="from-to hidden-phone hidden-tablet">
                     <%= label_tag "From: " %>
                   </div>
                     <%= text_field_tag 'from', Date.today.strftime("%A, %e %B, %Y") , class: "date-picker" %>
@@ -36,7 +38,7 @@
               </div>
               <div>
                 <div class="inline">
-                  <div class="from-to">
+                  <div class="from-to hidden-phone hidden-tablet">
                     <%= label_tag "To: " %>
                   </div>
                       <%= text_field_tag 'to', Date.today.strftime("%A, %e %B, %Y"), class: "date-picker" %>

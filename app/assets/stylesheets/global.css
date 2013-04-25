@@ -27,6 +27,7 @@ http://fum-music.com/FUM_Media/FUM_Live_pix.jpg
   
     iframe {
       border: none;
+      /*margin-right: 30px;*/
 
     }
 
@@ -87,11 +88,18 @@ http://fum-music.com/FUM_Media/FUM_Live_pix.jpg
   font-size: 4em;
   /*margin: auto;*/
   margin-top: 0.4em;
+  padding-left: 25px;
+
+}
+
+.main-header a {
+ color: gold;
 
 }
 
 .title {
   text-align: center;
+  padding-right: 40px;
   margin-bottom: 1em;
 }
 
@@ -210,7 +218,11 @@ form {
   padding: 5px;
   padding-left: 20px;
   padding-right: 20px;
-  box-shadow: 5px 5px 5px black;
+  
+}
+
+.ticket-btn a {
+  color: black;
 }
 
 .listing {
@@ -226,15 +238,17 @@ form {
   text-align: center;
   margin-left: 0;
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .info {
   width: 200px;
 }
 .album {
-  margin-left: 10px;
-  text-align: center;
-  height: 400px;
+  padding-top: 20px; 
+  /*margin-left: 10px;*/
+  text-align: right;
+
 }
 
 .player {
@@ -316,6 +330,7 @@ background-image: -webkit-gradient(
   background-color: gold;
   height: 62px;
    margin: 0 auto;
+   margin-top: -10px;
   width: 140px;
   /*margin-left: 300px;*/
   border-bottom-right-radius: 300%;
@@ -324,9 +339,11 @@ background-image: -webkit-gradient(
 }
 
 .results-background {
+  margin: 0 auto;
   background: rgba(0, 0, 0, 0.5);
   padding-top: 30px;
-  padding-left: 10px;
+  padding-left: 40px;
+  /*padding-right: 40px;*/
   border-radius: 8px;
   padding-bottom: 30px;
 }
@@ -335,6 +352,33 @@ background-image: -webkit-gradient(
   color: black;
 }
 
+.search-again {
+  text-align: center;
+}
+
+.search-again h4 a {
+  text-decoration: underline;
+}
+
+
+MEDIA QUERIES
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+
+   .results-background {
+      padding-right: 0;
+    }
+
+  }
+
+@media (max-width: 767px) { 
+  .album {
+    text-align: center;
+  }
+
+ 
+}
 /*.started {
   margin: 0 auto;
 }*/
