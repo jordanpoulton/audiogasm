@@ -361,6 +361,18 @@ background-image: -webkit-gradient(
 }
 
 
+.centre {
+        width: 100%;
+        text-align: center;
+      }
+
+.dialog {
+  background: rgba(0,0,0, 0.4);
+      width: 70em;
+      padding: 0 4em;
+      text-align: center;
+      }
+
 MEDIA QUERIES
 
 /* Portrait tablet to landscape and desktop */
