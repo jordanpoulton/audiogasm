@@ -225,7 +225,7 @@ form {
 .tickets {
   text-align: center;
   margin-left: 0;
-  margin-top: 160px;
+  margin-top: 40px;
 }
 
 .info {
@@ -265,7 +265,7 @@ background-image: -webkit-gradient(
 }
 
 .icon {
-  margin-left: 40px;
+  margin-left: .3em;
 }
 
 .artist {
@@ -324,7 +324,7 @@ background-image: -webkit-gradient(
 }
 
 .results-background {
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.5);
   padding-top: 30px;
   padding-left: 10px;
   border-radius: 8px;
