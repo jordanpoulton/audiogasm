@@ -14,7 +14,7 @@ http_interactions:
       message: OK
     headers: 
       Date: 
-      - Mon, 22 Apr 2013 15:54:37 GMT
+      - Thu, 25 Apr 2013 14:40:51 GMT
       Content-Type: 
       - application/json; charset=utf-8
       Content-Length: 
@@ -22,11 +22,11 @@ http_interactions:
       Vary: 
       - Accept-Encoding
       X-Request-Id: 
-      - Y1+rBrE6Qh+Nbu5iC8E1mg
+      - 8NopWHMfQgqLHMQckeJklQ
       Etag: 
       - "\"42a882dfcf6bbeb8ac977f08bfcd17e468b3d069\""
       X-Worker-Node: 
-      - 962d4:3818
+      - 20284:2462
       X-Ratelimit-Remaining: 
       - "19"
       Server: 
@@ -44,44 +44,10 @@ http_interactions:
       Keep-Alive: 
       - timeout=15, max=100
       Via: 
-      - 1.1 ID-0000627501223666 uproxy-3
+      - 1.1 ID-0000627501223666 uproxy-2
     body: 
       encoding: ASCII-8BIT
       string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 5, \"message\": \"The Identifier specified does not exist\"}}}"
     http_version: 
-  recorded_at: Mon, 22 Apr 2013 15:54:38 GMT
-- request: 
-    method: get
-    uri: http://developer.echonest.com/api/v4/artist/profile?api_key=&bucket=id:rdio-US&format=json&id=songkick:artist:1678900767865788
-    body: 
-      encoding: US-ASCII
-      string: ""
-    headers: {}
-
-  response: 
-    status: 
-      code: 400
-      message: Bad Request
-    headers: 
-      Date: 
-      - Wed, 24 Apr 2013 11:20:23 GMT
-      Content-Type: 
-      - text/html; charset=UTF-8
-      Content-Length: 
-      - "92"
-      X-Request-Id: 
-      - RjmfgqVBRM22p+Q2EjXUeg
-      Server: 
-      - TornadoServer/2.4.1
-      Connection: 
-      - Keep-alive
-      Keep-Alive: 
-      - timeout=15, max=100
-      Via: 
-      - 1.1 ID-0000627501223666 uproxy-3
-    body: 
-      encoding: ASCII-8BIT
-      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 1, \"message\": \"1|Invalid key: Unknown\"}}}"
-    http_version: 
-  recorded_at: Wed, 24 Apr 2013 11:20:23 GMT
+  recorded_at: Thu, 25 Apr 2013 14:40:51 GMT
 recorded_with: VCR 2.4.0

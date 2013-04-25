@@ -3,9 +3,9 @@ require 'test_helper'
 class GigInfoProviderTest < ActiveSupport::TestCase
 
   def setup
-    @gig_info_request = GigInfoProvider.new('london', '2013-04-25', '2013-04-26' )
-    @gig_info_request_invalid = GigInfoProvider.new('jalilililili', '2013-04-25', '2013-04-26')
-    @gig_info_request_date_format = GigInfoProvider.new('london', 'Friday, 19 April, 2013', 'Friday, 19 April, 2013')
+    @gig_info_request = GigInfo.new('london', '2013-04-25', '2013-04-26' )
+    @gig_info_request_invalid = GigInfo.new('jalilililili', '2013-04-25', '2013-04-26')
+    @gig_info_request_date_format = GigInfo.new('london', 'Friday, 19 April, 2013', 'Friday, 19 April, 2013')
     VCR.insert_cassette name
   end
 
@@ -45,7 +45,7 @@ class GigInfoProviderTest < ActiveSupport::TestCase
   end
 
   test 'convert params to valid API date format' do
-    assert_equal "2013-04-19", GigInfoProvider.format_date('Friday, 19 April, 2013')
+    assert_equal "2013-04-19", GigInfo.format_date('Friday, 19 April, 2013')
   end
 
   test 'has a from date when initialized with another date input format' do

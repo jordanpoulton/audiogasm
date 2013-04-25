@@ -1,4 +1,4 @@
-class GigInfoProvider
+class GigInfo
 
   API_KEY = 'Hkockg21oUnNQEZa'
   PAGE_RESULTS = 100
@@ -8,8 +8,8 @@ class GigInfoProvider
 
   def initialize(location, from, to, country = 'uk')
     @location = location
-    @from = GigInfoProvider.format_date(from)
-    @to = GigInfoProvider.format_date(to)
+    @from = GigInfo.format_date(from)
+    @to = GigInfo.format_date(to)
     @country = country
   end
 

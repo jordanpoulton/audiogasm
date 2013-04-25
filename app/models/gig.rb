@@ -16,7 +16,7 @@ class Gig
   end
 
   def self.find(location, from, to, genre)
-    gigs = GigInfoProvider.new(location, from, to).get_upcoming_gigs
+    gigs = GigInfo.new(location, from, to).get_upcoming_gigs
     get_first_valid_gig(gigs, genre)
   end
 

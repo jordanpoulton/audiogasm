@@ -14,7 +14,7 @@ http_interactions:
       message: OK
     headers: 
       Date: 
-      - Mon, 22 Apr 2013 15:54:38 GMT
+      - Thu, 25 Apr 2013 14:40:51 GMT
       Content-Type: 
       - application/json; charset=utf-8
       Content-Length: 
@@ -22,13 +22,13 @@ http_interactions:
       Vary: 
       - Accept-Encoding
       X-Request-Id: 
-      - c5S2JoFFS3SR6c0DNc72eQ
+      - F3p5pIVhSXmY2xYdWHsEXw
       Etag: 
       - "\"aaf8d42a245b72d8c88dce8f497a38048cfcfd91\""
       X-Worker-Node: 
-      - 2902a:6548
+      - 2902a:4121
       X-Ratelimit-Remaining: 
-      - "19"
+      - "18"
       Server: 
       - TornadoServer/2.4.1
       X-Ratelimit-Limit: 
@@ -38,18 +38,18 @@ http_interactions:
       Access-Control-Allow-Origin: 
       - "*"
       X-Ratelimit-Used: 
-      - "1"
+      - "2"
       Connection: 
       - Keep-alive
       Keep-Alive: 
       - timeout=15, max=100
       Via: 
-      - 1.1 ID-0000627501223666 uproxy-2
+      - 1.1 ID-0000627501223666 uproxy-3
     body: 
       encoding: ASCII-8BIT
       string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 0, \"message\": \"Success\"}, \"artist\": {\"foreign_ids\": [{\"catalog\": \"rdio-US\", \"foreign_id\": \"rdio-US:artist:r91318\"}], \"id\": \"ARH6W4X1187B99274F\", \"name\": \"Radiohead\"}}}"
     http_version: 
-  recorded_at: Mon, 22 Apr 2013 15:54:38 GMT
+  recorded_at: Thu, 25 Apr 2013 14:40:51 GMT
 - request: 
     method: post
     uri: http://api.rdio.com/1/
@@ -60,7 +60,7 @@ http_interactions:
       User-Agent: 
       - Faraday v0.8.7
       Authorization: 
-      - OAuth oauth_consumer_key="p3kgnybu9qgrdr22xe558q2v", oauth_nonce="5aede8037462d87eeebdc1c12f4e552e", oauth_signature="LnUQNWZ%2FyRBipE7ZoKerOQVkPl8%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1366715840", oauth_version="1.0"
+      - OAuth oauth_consumer_key="p3kgnybu9qgrdr22xe558q2v", oauth_nonce="38cb443a24fe644d94a2b69a9b215a5f", oauth_signature="VtNzbye%2F3C5uPM5OAvno62l4dOk%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1366900851", oauth_version="1.0"
       Content-Type: 
       - application/x-www-form-urlencoded
       Accept: 
@@ -71,17 +71,17 @@ http_interactions:
       message: OK
     headers: 
       X-Mashery-Responder: 
-      - mashery-web1-lax.mashery.com
+      - mashery-web2-lax.mashery.com
       Server: 
       - nginx/1.2.4
       Date: 
-      - Tue, 23 Apr 2013 11:17:21 GMT
+      - Thu, 25 Apr 2013 14:40:52 GMT
       Content-Type: 
       - application/json
       Connection: 
       - keep-alive
       X-Srv: 
-      - srv-207-09
+      - srv-207-08
       Content-Language: 
       - en
       Vary: 
@@ -102,39 +102,5 @@ http_interactions:
       encoding: US-ASCII
       string: "{\"status\": \"ok\", \"result\": [{\"radioKey\": \"sr2062726|3\", \"baseIcon\": \"album/4/3/f/0000000000029f34/square-200.jpg\", \"canDownloadAlbumOnly\": false, \"artistUrl\": \"/artist/Radiohead/\", \"duration\": 383, \"album\": \"OK Computer (Collector's Edition)\", \"isClean\": false, \"albumUrl\": \"/artist/Radiohead/album/OK_Computer_(Collector%27s_Edition)/\", \"shortUrl\": \"http://rd.io/x/QitdJsU/\", \"albumArtist\": \"Radiohead\", \"canStream\": true, \"embedUrl\": \"https://rd.io/e/QitdJsU/\", \"type\": \"t\", \"price\": \"None\", \"trackNum\": 2, \"albumArtistKey\": \"r91318\", \"key\": \"t2062726\", \"icon\": \"http://cdn3.rd.io/album/4/3/f/0000000000029f34/square-200.jpg\", \"canSample\": true, \"name\": \"Paranoid Android\", \"isExplicit\": false, \"artistKey\": \"r91318\", \"url\": \"/artist/Radiohead/album/OK_Computer_(Collector%27s_Edition)/track/Paranoid_Android/\", \"albumKey\": \"a171828\", \"artist\": \"Radiohead\", \"canDownload\": false, \"length\": 1, \"canTether\": true}]}"
     http_version: 
-  recorded_at: Tue, 23 Apr 2013 11:17:21 GMT
-- request: 
-    method: get
-    uri: http://developer.echonest.com/api/v4/artist/profile?api_key=&bucket=id:rdio-US&format=json&id=songkick:artist:253846
-    body: 
-      encoding: US-ASCII
-      string: ""
-    headers: {}
-
-  response: 
-    status: 
-      code: 400
-      message: Bad Request
-    headers: 
-      Date: 
-      - Wed, 24 Apr 2013 11:20:23 GMT
-      Content-Type: 
-      - text/html; charset=UTF-8
-      Content-Length: 
-      - "92"
-      X-Request-Id: 
-      - 6IHvR9FTRhOsxl1tQVq2pQ
-      Server: 
-      - TornadoServer/2.4.1
-      Connection: 
-      - Keep-alive
-      Keep-Alive: 
-      - timeout=15, max=100
-      Via: 
-      - 1.1 ID-0000627501223666 uproxy-2
-    body: 
-      encoding: ASCII-8BIT
-      string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 1, \"message\": \"1|Invalid key: Unknown\"}}}"
-    http_version: 
-  recorded_at: Wed, 24 Apr 2013 11:20:23 GMT
+  recorded_at: Thu, 25 Apr 2013 14:40:52 GMT
 recorded_with: VCR 2.4.0
