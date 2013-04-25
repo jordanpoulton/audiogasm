@@ -1,106 +1,53 @@
---- 
-http_interactions: 
-- request: 
+---
+http_interactions:
+- request:
     method: get
     uri: http://developer.echonest.com/api/v4/artist/profile?api_key=SYT5EOFXZFDBJFV2P&bucket=id:rdio-US&format=json&id=songkick:artist:253846
-    body: 
+    body:
       encoding: US-ASCII
       string: ""
     headers: {}
 
-  response: 
-    status: 
+  response:
+    status:
       code: 200
       message: OK
-    headers: 
-      Date: 
+    headers:
+      Date:
       - Thu, 25 Apr 2013 14:40:51 GMT
-      Content-Type: 
+      Content-Type:
       - application/json; charset=utf-8
-      Content-Length: 
+      Content-Length:
       - "218"
-      Vary: 
+      Vary:
       - Accept-Encoding
-      X-Request-Id: 
+      X-Request-Id:
       - F3p5pIVhSXmY2xYdWHsEXw
-      Etag: 
+      Etag:
       - "\"aaf8d42a245b72d8c88dce8f497a38048cfcfd91\""
-      X-Worker-Node: 
+      X-Worker-Node:
       - 2902a:4121
-      X-Ratelimit-Remaining: 
+      X-Ratelimit-Remaining:
       - "18"
-      Server: 
+      Server:
       - TornadoServer/2.4.1
-      X-Ratelimit-Limit: 
+      X-Ratelimit-Limit:
       - "20"
-      Cache-Control: 
+      Cache-Control:
       - max-age=86400
-      Access-Control-Allow-Origin: 
+      Access-Control-Allow-Origin:
       - "*"
-      X-Ratelimit-Used: 
+      X-Ratelimit-Used:
       - "2"
-      Connection: 
+      Connection:
       - Keep-alive
-      Keep-Alive: 
+      Keep-Alive:
       - timeout=15, max=100
-      Via: 
+      Via:
       - 1.1 ID-0000627501223666 uproxy-3
-    body: 
+    body:
       encoding: ASCII-8BIT
       string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 0, \"message\": \"Success\"}, \"artist\": {\"foreign_ids\": [{\"catalog\": \"rdio-US\", \"foreign_id\": \"rdio-US:artist:r91318\"}], \"id\": \"ARH6W4X1187B99274F\", \"name\": \"Radiohead\"}}}"
-    http_version: 
+    http_version:
   recorded_at: Thu, 25 Apr 2013 14:40:51 GMT
-- request: 
-    method: post
-    uri: http://api.rdio.com/1/
-    body: 
-      encoding: US-ASCII
-      string: method=getTracksForArtist&artist=r91318&count=1
-    headers: 
-      User-Agent: 
-      - Faraday v0.8.7
-      Authorization: 
-      - OAuth oauth_consumer_key="p3kgnybu9qgrdr22xe558q2v", oauth_nonce="38cb443a24fe644d94a2b69a9b215a5f", oauth_signature="VtNzbye%2F3C5uPM5OAvno62l4dOk%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1366900851", oauth_version="1.0"
-      Content-Type: 
-      - application/x-www-form-urlencoded
-      Accept: 
-      - "*/*"
-  response: 
-    status: 
-      code: 200
-      message: OK
-    headers: 
-      X-Mashery-Responder: 
-      - mashery-web2-lax.mashery.com
-      Server: 
-      - nginx/1.2.4
-      Date: 
-      - Thu, 25 Apr 2013 14:40:52 GMT
-      Content-Type: 
-      - application/json
-      Connection: 
-      - keep-alive
-      X-Srv: 
-      - srv-207-08
-      Content-Language: 
-      - en
-      Vary: 
-      - Accept-Language, Cookie
-      Cache-Control: 
-      - no-cache
-      Access-Control-Allow-Origin: 
-      - "*"
-      P3p: 
-      - CP="This is not a P3P policy. See http://www.rdio.com/legal/privacy-policy for more info."
-      X-Version: 
-      - "720"
-      Accept-Ranges: 
-      - bytes
-      Content-Length: 
-      - "915"
-    body: 
-      encoding: US-ASCII
-      string: "{\"status\": \"ok\", \"result\": [{\"radioKey\": \"sr2062726|3\", \"baseIcon\": \"album/4/3/f/0000000000029f34/square-200.jpg\", \"canDownloadAlbumOnly\": false, \"artistUrl\": \"/artist/Radiohead/\", \"duration\": 383, \"album\": \"OK Computer (Collector's Edition)\", \"isClean\": false, \"albumUrl\": \"/artist/Radiohead/album/OK_Computer_(Collector%27s_Edition)/\", \"shortUrl\": \"http://rd.io/x/QitdJsU/\", \"albumArtist\": \"Radiohead\", \"canStream\": true, \"embedUrl\": \"https://rd.io/e/QitdJsU/\", \"type\": \"t\", \"price\": \"None\", \"trackNum\": 2, \"albumArtistKey\": \"r91318\", \"key\": \"t2062726\", \"icon\": \"http://cdn3.rd.io/album/4/3/f/0000000000029f34/square-200.jpg\", \"canSample\": true, \"name\": \"Paranoid Android\", \"isExplicit\": false, \"artistKey\": \"r91318\", \"url\": \"/artist/Radiohead/album/OK_Computer_(Collector%27s_Edition)/track/Paranoid_Android/\", \"albumKey\": \"a171828\", \"artist\": \"Radiohead\", \"canDownload\": false, \"length\": 1, \"canTether\": true}]}"
-    http_version: 
-  recorded_at: Thu, 25 Apr 2013 14:40:52 GMT
 recorded_with: VCR 2.4.0

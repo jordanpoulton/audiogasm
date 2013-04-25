@@ -9,7 +9,7 @@
 
 <div class="container">
   <div class="row intro">
-    <div class="span8 offset2 intro-box">
+    <div class="span6 offset3 intro-box">
       <div class="form-background">
 
         <h1 class="title"> Locate. Listen. Live. </h1>
@@ -28,7 +28,7 @@
               <%= label_tag "When do you want to go out?" %>
               <div>
                 <div class="inline">
-                  <div class="from-to">
+                  <div class="from-to hidden-phone hidden-tablet">
                     <%= label_tag "From: " %>
                   </div>
                     <%= text_field_tag 'from', Date.today.strftime("%A, %e %B, %Y") , class: "date-picker" %>
@@ -36,7 +36,7 @@
               </div>
               <div>
                 <div class="inline">
-                  <div class="from-to">
+                  <div class="from-to hidden-phone hidden-tablet">
                     <%= label_tag "To: " %>
                   </div>
                       <%= text_field_tag 'to', Date.today.strftime("%A, %e %B, %Y"), class: "date-picker" %>

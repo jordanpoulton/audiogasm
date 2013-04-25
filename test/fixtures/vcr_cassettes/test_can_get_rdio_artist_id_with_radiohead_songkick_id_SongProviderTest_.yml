@@ -1,53 +1,53 @@
---- 
-http_interactions: 
-- request: 
+---
+http_interactions:
+- request:
     method: get
     uri: http://developer.echonest.com/api/v4/artist/profile?api_key=SYT5EOFXZFDBJFV2P&bucket=id:rdio-US&format=json&id=songkick:artist:253846
-    body: 
+    body:
       encoding: US-ASCII
       string: ""
     headers: {}
 
-  response: 
-    status: 
+  response:
+    status:
       code: 200
       message: OK
-    headers: 
-      Date: 
+    headers:
+      Date:
       - Thu, 25 Apr 2013 14:40:50 GMT
-      Content-Type: 
+      Content-Type:
       - application/json; charset=utf-8
-      Content-Length: 
+      Content-Length:
       - "218"
-      Vary: 
+      Vary:
       - Accept-Encoding
-      X-Request-Id: 
+      X-Request-Id:
       - 3P1NWwZKT2OcNa8xSUZddQ
-      Etag: 
+      Etag:
       - "\"aaf8d42a245b72d8c88dce8f497a38048cfcfd91\""
-      X-Worker-Node: 
+      X-Worker-Node:
       - 746e1:22697
-      X-Ratelimit-Remaining: 
+      X-Ratelimit-Remaining:
       - "19"
-      Server: 
+      Server:
       - TornadoServer/2.4.1
-      X-Ratelimit-Limit: 
+      X-Ratelimit-Limit:
       - "20"
-      Cache-Control: 
+      Cache-Control:
       - max-age=86400
-      Access-Control-Allow-Origin: 
+      Access-Control-Allow-Origin:
       - "*"
-      X-Ratelimit-Used: 
+      X-Ratelimit-Used:
       - "1"
-      Connection: 
+      Connection:
       - Keep-alive
-      Keep-Alive: 
+      Keep-Alive:
       - timeout=15, max=100
-      Via: 
+      Via:
       - 1.1 ID-0000627501223666 uproxy-3
-    body: 
+    body:
       encoding: ASCII-8BIT
       string: "{\"response\": {\"status\": {\"version\": \"4.2\", \"code\": 0, \"message\": \"Success\"}, \"artist\": {\"foreign_ids\": [{\"catalog\": \"rdio-US\", \"foreign_id\": \"rdio-US:artist:r91318\"}], \"id\": \"ARH6W4X1187B99274F\", \"name\": \"Radiohead\"}}}"
-    http_version: 
+    http_version:
   recorded_at: Thu, 25 Apr 2013 14:40:50 GMT
 recorded_with: VCR 2.4.0
