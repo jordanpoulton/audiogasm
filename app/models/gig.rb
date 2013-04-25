@@ -1,6 +1,6 @@
 class Gig
 
-  attr_reader :artist_id, :location, :date, :venue, :ticket_link
+  attr_reader :artist_id, :location, :date, :venue, :ticket_link, :artist
 
   def initialize(artist_id, location, date, venue, ticket_link)
     @artist_id = artist_id
@@ -11,7 +11,7 @@ class Gig
   end
 
   def song
-    artist = @artist_id.shuffle.first
+    @artist = @artist_id.shuffle.first
     SongProvider.get_track_embed_url(artist)
   end
 
