@@ -5,6 +5,7 @@ class GigInfoProviderTest < ActiveSupport::TestCase
   def setup
     @gig_info_request = GigInfoProvider.new('london', '2013-04-25', '2013-04-26' )
     @gig_info_request_invalid = GigInfoProvider.new('jalilililili', '2013-04-25', '2013-04-26')
+    @gig_info_request_date_format = GigInfoProvider.new('london', 'Friday, 19 April, 2013', 'Friday, 19 April, 2013')
     VCR.insert_cassette name
   end
 
@@ -28,7 +29,7 @@ class GigInfoProviderTest < ActiveSupport::TestCase
   end
 
   test 'can get an area id for a location' do
-    assert_equal @gig_info_request.get_location_id, 24426
+    assert_equal 24426, @gig_info_request.get_location_id
   end
 
   test 'returns readable error message if location not found' do
@@ -41,10 +42,14 @@ class GigInfoProviderTest < ActiveSupport::TestCase
 
   test 'can get an list of upcoming gigs' do
     assert_instance_of Gig, @gig_info_request.get_upcoming_gigs[0]
-    # assert_equal expected_gigs, @gig_info_request.get_upcoming_gigs
   end
 
-  # def expected_gigs
-  #   [Gig.new, Gig.new]
-  # end
+  test 'convert params to valid API date format' do
+    assert_equal "2013-04-19", GigInfoProvider.format_date('Friday, 19 April, 2013')
+  end
+
+  test 'has a from date when initialized with another date input format' do
+    assert_equal '2013-04-19', @gig_info_request_date_format.from
+  end
+
 end
