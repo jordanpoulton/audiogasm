@@ -11,7 +11,7 @@ class Gig
   end
 
   def song
-    @artist = @artist_id.shuffle.first
+    @artist = @artist_id.first
     SongProvider.get_track_embed_url(artist) rescue nil
   end
 

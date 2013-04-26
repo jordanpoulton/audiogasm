@@ -247,9 +247,16 @@ form {
 .album {
   padding-top: 20px;
   /*margin-left: 10px;*/
-  text-align: right;
+  text-align: right;}
+
+@media (max-width: 767px) {
+  .album {
+    text-align: center;
+  }
 
 }
+
+
 
 .player {
   display: none;
@@ -340,7 +347,7 @@ background-image: -webkit-gradient(
 
 .results-background {
   margin: 0 auto;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.4);
   padding-top: 30px;
   padding-left: 40px;
   /*padding-right: 40px;*/
@@ -361,17 +368,6 @@ background-image: -webkit-gradient(
 }
 
 
-.centre {
-        width: 100%;
-        text-align: center;
-      }
-
-.dialog {
-  background: rgba(0,0,0, 0.4);
-      width: 70em;
-      padding: 0 4em;
-      text-align: center;
-      }
 
 MEDIA QUERIES
 
