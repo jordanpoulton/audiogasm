@@ -12,7 +12,7 @@ class Gig
 
   def song
     @artist = @artist_id.shuffle.first
-    SongProvider.get_track_embed_url(artist)
+    SongProvider.get_track_embed_url(artist) rescue nil
   end
 
   def self.find(location, from, to, genre)
@@ -21,7 +21,7 @@ class Gig
   end
 
   def self.get_first_valid_gig(gigs, genre)
-    gigs.detect {|gig| gig.check_gig_is_valid(genre) }
+    gigs.detect {|gig| gig.check_gig_is_valid(genre) && gig.song }
   end
 
   def check_gig_is_valid(genre)

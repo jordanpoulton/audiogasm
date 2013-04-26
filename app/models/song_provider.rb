@@ -10,8 +10,10 @@ class SongProvider
 
 
   def self.get_track_embed_url(artist_id, count =1)
-    get_track = @rdio_api.getTracksForArtist(:artist => "#{get_rdio_artist_id(artist_id)}", :count => "#{count}")[0]
-    track_url = get_track.embedUrl
+    artist = SongProvider.get_rdio_artist_id(artist_id)
+    tracks = @rdio_api.getTracksForArtist(:artist => "#{artist}", :count => "#{count}")
+    raise "Tracks for #{artist} not found" if tracks.empty?
+    track_url = tracks.first.embedUrl
   end
 
   private
@@ -20,7 +22,7 @@ class SongProvider
     begin
       make_rdio_artist_id_readable(
         turn_songkick_artist_id_into_rdio_artist_id(
-          parsed_api_call(artist_id)))
+      parsed_api_call(artist_id)))
     rescue
       "Artist not understood by Rdio"
     end
@@ -41,5 +43,4 @@ class SongProvider
       "Artist not understood by Rdio"
     end
   end
-
 end
