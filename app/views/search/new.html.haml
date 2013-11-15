@@ -1,0 +1,47 @@
+.bg
+  .bg-img.festival
+  .bg-img.dj
+  .bg-img.rock
+  .bg-img.classical
+  .bg-img.jazz
+
+.container
+  .row.intro
+    .clspan6.offset3.intro-box
+      .form-background
+
+        %h1.title Locate. Listen. Live.
+
+        %h3#description-text Audiogasm helps you discover live music playing in your area. Tell us where you want to go out, when, and what music you're into, and Audiogasm will do the rest. We'll then play you a track, and if you like it, you can buy tickets there and then. Simple!
+
+        .user_input
+
+        = form_tag(search_path, method: 'get') do
+          .form-space.location_input
+            = label_tag "Where do you want to go out? "
+            = select_tag 'location', options_for_select(["Bath", "Birmingham", "Brighton", "Bristol", "Cardiff", "Edinburgh", "Glasgow", "Leeds", "Lincoln", "Liverpool", "London", "Manchester", "Newcastle", "Sheffield", "Stratford upon Avon"], "London" ), :multiple => false
+
+          .form-space.date_input
+            = label_tag "When do you want to go out?"
+            %div
+              .inline
+                .from-to.hidden-phone.hidden-tablet
+                  = label_tag "From: "
+                = text_field_tag 'from', Date.today.strftime("%A, %e %B, %Y") , class: "date-picker"
+            %div
+              .inline
+                .from-to.hidden-phone.hidden-tablet
+                  = label_tag "To: "
+                = text_field_tag 'to', Date.today.strftime("%A, %e %B, %Y"), class: "date-picker"
+
+          .form-space.genre_input
+            = label_tag "What music are you in to? "
+            = select_tag 'genre', options_for_select(["Alternative Rock", "Blues", "British Blues", "British Pop", "British Folk", "Classical", "Dance Pop", "Disco", "Easy Listening", "Folk", "Grunge", "Hard Rock", "Hip Hop", "Jazz", "Pop", "Pop Rock", "Progressive Rock", "Punk", "Rap", "R&B", "Rock", "Soul"], "Pop" ), :multiple => false
+
+          .button.submit_input
+            = submit_tag "Gimme some tunes!"
+
+      .row.started
+        .get-started
+          %h4.started-text Get started
+          %i.icon-arrow-down.icon-large
